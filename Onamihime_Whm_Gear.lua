@@ -14,6 +14,7 @@ function user_job_setup()
 	gear.obi_nuke_waist = "Sekhmet Corset"
 	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	gear.obi_nuke_back = "Toro Cape"
+	gear.WHM_FC_Cape = { name="Alaunus's Cape", augments={'HP+30','Eva.+10 /Mag. Eva.+10','"Fast Cast"+10',}},
   
 		  -- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
@@ -354,7 +355,7 @@ function init_gear_sets()
 		-- ear2="Meili Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		--back=gear.WHM_FC_Cape, --25
+		back=gear.WHM_FC_Cape, --25
 		back="Alaunus's Cape",
 		--waist="Bishop's Sash",
 		waist="Cleric's Belt",
@@ -373,7 +374,7 @@ function init_gear_sets()
 		-- ear2="Etiolation Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		--back=gear.WHM_FC_Cape,
+		back=gear.WHM_FC_Cape,
 		back="Alaunus's Cape",
 		waist="Embla Sash",
 	}
@@ -540,7 +541,7 @@ function init_gear_sets()
 		sub="Sors Shield",
 		-- ammo="Homiliary",
 		--head="Befouled Crown",
-		head={ name="Chironic Hat", augments={'Enmity+5','DEX+9','"Refresh"+1','Accuracy+4 Attack+4','Mag. Acc.+1 "Mag.Atk.Bns."+1',}},
+		head="Inyanga Tiara",
 		body="Theo. Briault +1",
 		hands="Inyan. Dastanas +1",
 		legs="Assiduity Pants",
@@ -550,9 +551,9 @@ function init_gear_sets()
 		-- left_ear={ name="Moonshade Earring", augments={'MP+25','Latent effect: "Refresh"+1',}},
 		-- right_ear="Infused Earring",
 		--ear2="Etiolation Earring",
-		-- ring1={name="Stikini Ring +1", bag="wardrobe3"},
+		ring1="Gelatinous Ring",
 		ring2="Inyanga Ring",
-		--back=gear.WHM_FC_Cape,
+		back=gear.WHM_FC_Cape,
 		back="Alaunus's Cape",
 		waist="Fucho-no-Obi",
 	}
