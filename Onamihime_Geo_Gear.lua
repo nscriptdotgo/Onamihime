@@ -48,11 +48,11 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Precast sets to enhance JAs
-	sets.precast.JA.Bolster = {body="Bagua Tunic +1"}
-	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic +1",back=gear.idle_jse_back}
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
+	sets.precast.JA.Bolster = {body="Bagua Tunic"}
+	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic",back=gear.idle_jse_back}
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
-	sets.precast.JA['Full Circle'] = {head="Azimuth Hood +1",hands="Bagua Mitaines +1"}
+	sets.precast.JA['Full Circle'] = {head="Azimuth Hood",hands="Bagua Mitaines"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
 	sets.buff.Entrust = {}
@@ -126,8 +126,8 @@ function init_gear_sets()
 	--Extra Indi duration as long as you can keep your 900 skill cap.
 	sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {
 		back=gear.idle_jse_back,
-		legs="Bagua Pants +1",
-		feet="Azimuth Gaiters +1"
+		legs="Bagua Pants",
+		feet="Azimuth Gaiters"
 	})
 		
     sets.midcast.Cure = {main=gear.gada_healing_club,sub="Sors Shield",ammo="Hasty Pinion +1",
@@ -307,9 +307,9 @@ function init_gear_sets()
 		main="Bolelabunga",
 		-- sub="Genmei Shield",
 		range="Nepote Bell",
-		-- head="Azimuth Hood +1",
-		-- neck="Loricate Torque +1",
-		-- ear1="Handler's Earring",
+		head="Azimuth Hood",
+		neck="Sanctity Necklace",
+		ear1="Handler's Earring",
 		-- ear2="Handler's Earring +1",
 		-- body="Jhakri Robe +2",
 		hands="Geo. Mitaines",
@@ -384,10 +384,21 @@ function init_gear_sets()
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
 
 	-- Normal melee group
-	sets.engaged = {ammo="Hasty Pinion +1",
-		head="Befouled Crown",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
-		body="Jhakri Robe +2",hands="Gazu Bracelet +1",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back="Kayapa Cape",waist="Witful Belt",legs="Assid. Pants +1",feet="Battlecast Gaiters"}
+	sets.engaged = {
+		ranged="Nepote Bell",
+		head="Befouled Crown",
+		neck="Asperity Necklace",
+		ear1="Cessance Earring",
+		ear2="Brutal Earring",
+		body="Jhakri Robe +2",
+		hands="Gazu Bracelet +1",
+		ring1="Ramuh Ring +1",
+		ring2="Ramuh Ring +1",
+		back="Kayapa Cape",
+		waist="Witful Belt",
+		legs="Assid. Pants +1",
+		feet="Battlecast Gaiters"
+	}
 		
 	sets.engaged.DW = {ammo="Hasty Pinion +1",
 		head="Befouled Crown",neck="Asperity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
