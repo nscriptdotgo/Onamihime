@@ -51,7 +51,7 @@ function init_gear_sets()
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic",back=gear.idle_jse_back}
 	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
-	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants +1"}
+	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood",hands="Bagua Mitaines"}
 	
 	-- Indi Duration in slots that would normally have skill here to make entrust more efficient.
@@ -69,7 +69,10 @@ function init_gear_sets()
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Nepote Bell",ammo=empty})
 	
-    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {ear2="Malignance Earring",hands="Bagua Mitaines +1"})
+    sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
+		-- ear2="Malignance Earring",
+		hands="Bagua Mitaines"
+	})
 
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {main="Serenity",sub="Clerisy Strap +1"})
 		
@@ -310,21 +313,21 @@ function init_gear_sets()
 		head="Azimuth Hood",
 		neck="Sanctity Necklace",
 		ear1="Handler's Earring",
-		-- ear2="Handler's Earring +1",
+		ear2="Handler's Earring +1",
 		-- body="Jhakri Robe +2",
 		hands="Geo. Mitaines",
 		ring1="Gelatinous Ring",
 		ring2="Fortified Ring",
 		-- back=gear.idle_jse_back,
 		waist="Isa Belt",
-		-- legs="Psycloth Lappas",
+		legs="Psycloth Lappas",
 		feet="Bagua Sandals"
 	}
 
 	sets.idle.PDT.Pet = {main="Malignance Pole",sub="Umbra Strap",range="Nepote Bell",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
 		body="Jhakri Robe +2",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
-		back=gear.idle_jse_back,waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
+		back=gear.idle_jse_back,waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals"}
 
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})
