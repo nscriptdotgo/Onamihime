@@ -53,7 +53,7 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 	sets.precast.FC = {
-		-- main="Sucellus", --5
+		main="Gada", --5
 		-- sub="Chanter's Shield", --8
 		ammo="Incantor Stone", --2
 		body="Inyanga Jubbah", --14
@@ -76,7 +76,7 @@ function init_gear_sets()
 	})
 
 	sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {
-		--ammo="Impatiens",
+		ammo="Incantor Stone",
 		main="Queller Rod",
 		sub="Sors Shield",
 		head="Vanya Hood",
@@ -92,7 +92,9 @@ function init_gear_sets()
 
 	sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 
-	sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {feet="Hygieia Clogs +1"})
+	sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
+		-- feet="Hygieia Clogs +1"
+	})
 
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -100,7 +102,10 @@ function init_gear_sets()
 
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
-	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Genmei Shield"})
+	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {
+		-- main="Daybreak",
+		-- sub="Genmei Shield"
+	})
 
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Benediction = {body="Piety Briault"}
@@ -143,9 +148,23 @@ function init_gear_sets()
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {feet=gear.chironic_treasure_feet})
 
 	--Situational sets: Gear that is equipped on certain targets
-	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"}
-	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"}
-	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash",feet="Inspirited Boots"}
+	sets.Self_Healing = {
+		-- neck="Phalaina Locket",
+		-- ring1="Kunaji Ring",
+		-- ring2="Asklepian Ring",
+		waist="Gishdubar Sash"
+	}
+	sets.Cure_Received = {
+		-- neck="Phalaina Locket",
+		-- ring1="Kunaji Ring",
+		-- ring2="Asklepian Ring",
+		waist="Gishdubar Sash"
+	}
+	sets.Self_Refresh = {
+		-- back="Grapevine Cape",
+		waist="Gishdubar Sash",
+		-- feet="Inspirited Boots"
+	}
 
 	-- Conserve Mp set for spells that don't need anything else, for set_combine.
 
@@ -154,12 +173,12 @@ function init_gear_sets()
 		--sub="Thuellaic Ecu +1",
 		head="Vanya Hood",
 		--body="Vedic Coat",
-		--hands="Shrieker's Cuffs",
+		hands=gear.telchine_enh_hands,
 		legs="Vanya Slops",
 		--feet="Kaykaus Boots +1",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		ear1="Mendi. Earring",
-		waist="Austerity Belt",
+		-- waist="Austerity Belt",
 		back="Solemnity Cape",
 	}
 
@@ -193,24 +212,16 @@ function init_gear_sets()
 	sets.midcast.Cure = {
 		main="Queller Rod", --15(+2)/(-15)
 		sub="Sors Shield", --3/(-5)
-		--ammo="Esper Stone +1", --0/(-5)
-		ammo="Hydrocera",
-		head="Gende. Caubeen +1", --18/(-8)
-		body="Theo. Briault +1",
+		ammo="Incantor Stone",
+		head="Vanya Hood", --18/(-8)
+		body="Eber's Bliaud",
 		hands="Telchine Gloves", --(+4)/(-7)
-		-- legs="Vanya Slops",
 		legs="Ebers Pantaloons",
-		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-		neck="Incanter's Torque",
-		ear1="Glorious Earring", -- (+2)/(-5)
+		neck="Cleric's Torque",
+		ear1="Mendicant Earring", -- (+2)/(-5)
 		ear2="Nourish. Earring +1",
-		--ear2="Meili Earring",
-		-- ring1={name="Ephedra Ring", bag="wardrobe1"},
-		-- ring2={name="Ephedra Ring", bag="wardrobe2"},
-		--back=gear.WHM_Cure_Cape, --0/(-10)
-		back="Alaunus's Cape",
-		--waist="Bishop's Sash",
+		back=gear.WHM_FC_Cape,
 		waist="Cleric's Belt",
 	}
 
@@ -536,21 +547,15 @@ function init_gear_sets()
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
-		--main="Bolelabunga",
-		main="Queller Rod",
+		main="Bolelabunga",
+		-- main="Queller Rod",
 		sub="Sors Shield",
-		-- ammo="Homiliary",
-		--head="Befouled Crown",
 		head="Inyanga Tiara",
 		body="Theo. Briault +1",
 		hands="Inyan. Dastanas +1",
 		legs="Assiduity Pants",
 		feet="Herald's Gaiters",
 		neck="Sanctity Necklace",
-		--ear1="Genmei Earring",
-		-- left_ear={ name="Moonshade Earring", augments={'MP+25','Latent effect: "Refresh"+1',}},
-		-- right_ear="Infused Earring",
-		--ear2="Etiolation Earring",
 		ring1="Gelatinous Ring",
 		ring2="Inyanga Ring",
 		back=gear.WHM_FC_Cape,

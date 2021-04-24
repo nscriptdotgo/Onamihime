@@ -320,7 +320,7 @@ function init_gear_sets()
 		ring2="Fortified Ring",
 		-- back=gear.idle_jse_back,
 		waist="Isa Belt",
-		legs="Psycloth Lappas",
+		legs=gear.telchine_pet_legs,
 		feet="Bagua Sandals"
 	}
 
