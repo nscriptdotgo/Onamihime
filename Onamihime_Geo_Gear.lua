@@ -11,6 +11,7 @@ function user_job_setup()
 
 	gear.nuke_jse_back = {name="Nantosuelta's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10'}}
 	gear.idle_jse_back = {name="Nantosuelta's Cape",augments={'HP+60','Eva.+20 /Mag. Eva.+20','Pet: "Regen"+10'}}
+	gear.mndenfeeb_jse_back = {name="Nantosuelta's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10'}}
 	
 	gear.obi_cure_back = "Tempered Cape +1"
 	gear.obi_cure_waist = "Witful Belt"
@@ -62,10 +63,23 @@ function init_gear_sets()
 	
 	-- Fast cast sets for spells
 
-	sets.precast.FC = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Impatiens",
-		head="Amalric Coif +1",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Zendik Robe",hands="Volte Gloves",ring1="Kishar Ring",ring2="Lebeche Ring",
-		back="Perimede Cape",waist="Witful Belt",legs="Geo. Pants +1",feet="Regal Pumps +1"}
+	sets.precast.FC = {
+		main=gear.grioavolr_fc_staff,
+		sub="Clerisy Strap +1",
+		ammo="Impatiens",
+		head="Amalric Coif +1",
+		neck="Voltsurge Torque",
+		ear1="Enchntr. Earring +1",
+		ear2="Malignance Earring",
+		body="Zendik Robe",
+		hands="Volte Gloves",
+		ring1="Kishar Ring",
+		ring2="Lebeche Ring",
+		back=gear.mndenfeeb_jse_back,
+		waist="Witful Belt",
+		legs="Geo. Pants",
+		feet="Regal Pumps +1"
+	}
 
 	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Nepote Bell",ammo=empty})
 	
@@ -294,7 +308,7 @@ function init_gear_sets()
 		-- hands=gear.merlinic_refresh_hands,
 		-- ring1="Stikini Ring +1",
 		-- ring2="Stikini Ring +1",
-		-- back="Umbra Cape",
+		back=gear.idle_jse_back,
 		-- waist="Flax Sash",
 		legs="Assid. Pants",
 		feet=gear.merlinic_refresh_feet
@@ -318,7 +332,7 @@ function init_gear_sets()
 		hands="Geo. Mitaines",
 		ring1="Gelatinous Ring",
 		ring2="Fortified Ring",
-		-- back=gear.idle_jse_back,
+		back=gear.idle_jse_back,
 		waist="Isa Belt",
 		legs=gear.telchine_pet_legs,
 		feet="Bagua Sandals"

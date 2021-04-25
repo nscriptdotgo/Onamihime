@@ -58,14 +58,14 @@ function init_gear_sets()
 		ammo="Incantor Stone", --2
 		body="Inyanga Jubbah", --14
 		hands="Gende. Gages +1", --7
-		legs="Orvail Pants +1", --6
+		legs="Ayanmo Cosciales +1", --6
 		feet="Regal Pumps +1", --7
 		neck="Voltsurge Torque", --4
 		ear1="Loquacious Earring", --2
 		-- ear2="Etiolation Earring", --1
 		-- ring1="Kishar Ring", --4
 		-- ring2="Weather. Ring", --6(4)
-		back={ name="Alaunus's Cape", augments={'HP+30','Eva.+10 /Mag. Eva.+10','"Fast Cast"+10',}},
+		back=gear.WHM_FC_Cape,
 		waist="Embla Sash", --5
 	}
 
@@ -83,8 +83,8 @@ function init_gear_sets()
 		legs="Ebers Pantaloons", --12
 		ear1="Mendi. Earring", --5
 		ear2="Nourish. Earring +1", --4
-		-- ring1="Lebeche Ring", --(2)
-		back="Alaunus's Cape", --10
+		ring1="Lebeche Ring", --(2)
+		back=gear.WHM_FC_Cape, --10
 		--back="Perimede Cape", --(4)
 		feet="Vanya Clogs",
 		waist="Embla Sash", --3(3)
@@ -214,7 +214,7 @@ function init_gear_sets()
 		sub="Sors Shield", --3/(-5)
 		ammo="Incantor Stone",
 		head="Vanya Hood", --18/(-8)
-		body="Eber's Bliaud",
+		body="Ebers Bliaud",
 		hands="Telchine Gloves", --(+4)/(-7)
 		legs="Ebers Pantaloons",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
@@ -232,19 +232,19 @@ function init_gear_sets()
 		ammo="Hydrocera",
 		head="Gende. Caubeen +1", --18/(-8)
 		body="Ebers Bliaud",
-		hands="Theophany Mitts", --(+4)/(-7)
+		hands="Theophany Mitts +1", --(+4)/(-7)
 		legs="Ebers Pantaloons",
 		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Incanter's Torque",
-		ear1="Glorious Earring", -- (+2)/(-5)
+		ear1="Mendicant's Earring", -- (+2)/(-5)
 		ear2="Nourish. Earring +1",
 		--ear2="Meili Earring",
 		ring1="Lebeche Ring", --3/(-5)
 		--ring2={name="Haoma's Ring", bag="wardrobe3"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
 		--back=gear.WHM_Cure_Cape, --0/(-10)
-		back="Alaunus's Cape",
+		back=gear.WHM_FC_Cape,
 		--waist="Bishop's Sash",
 		waist="Cleric's Belt",
 	}
@@ -283,7 +283,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCuraga = set_combine(sets.midcast.Cure, {
 		main="Iridal Staff", --10
 		-- sub="Achaq Grip", --0/(-4)
-		-- hands="Telchine Gloves", --17
+		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
 	})
