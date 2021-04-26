@@ -81,7 +81,7 @@ function init_gear_sets()
 		feet="Regal Pumps +1"
 	}
 
-	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Nepote Bell",ammo=empty})
+	sets.precast.FC.Geomancy = set_combine(sets.precast.FC, {range="Dunna",ammo=empty})
 	
     sets.precast.FC['Elemental Magic'] = set_combine(sets.precast.FC, {
 		-- ear2="Malignance Earring",
@@ -124,7 +124,7 @@ function init_gear_sets()
 	sets.midcast.Geomancy = {
 		main="Solstice",
 		-- sub="Genmei Shield",
-		range="Nepote Bell",
+		range="Dunna",
 		head="Vanya Hood",
 		-- neck="Incanter's Torque",
 		-- ear1="Gifted Earring",
@@ -266,10 +266,23 @@ function init_gear_sets()
 	
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring1="Stikini Ring +1"})
 		
-	sets.midcast['Enhancing Magic'] = {main=gear.gada_enhancing_club,sub="Ammurapi Shield",ammo="Hasty Pinion +1",
-		head="Telchine Cap",neck="Incanter's Torque",ear1="Andoaa Earring",ear2="Gifted Earring",
-		body="Telchine Chas.",hands="Telchine Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
-		back="Perimede Cape",waist="Embla Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
+	sets.midcast['Enhancing Magic'] = {
+		main=gear.gada_enhancing_club,
+		sub="Ammurapi Shield",
+		ammo="Hasty Pinion +1",
+		head="Telchine Cap",
+		neck="Incanter's Torque",
+		ear1="Andoaa Earring",
+		ear2="Gifted Earring",
+		body="Telchine Chas.",
+		hands="Telchine Gloves",
+		ring1="Stikini Ring +1",
+		ring2="Stikini Ring +1",
+		back="Perimede Cape",
+		waist="Embla Sash",
+		legs="Telchine Braconi",
+		feet="Telchine Pigaches"
+	}
 		
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 	
@@ -297,21 +310,21 @@ function init_gear_sets()
 	-- Idle sets
 
 	sets.idle = {
-		main="Bolelabunga",
+		main="Solstice",
 		-- sub="Genmei Shield",
-		-- ammo="Staunch Tathlum +1",
-		-- head="Befouled Crown",
-		-- neck="Loricate Torque +1",
-		-- ear1="Genmei Earring",
-		-- ear2="Ethereal Earring",
-		body="Jhakri Robe +2",
-		-- hands=gear.merlinic_refresh_hands,
-		-- ring1="Stikini Ring +1",
-		-- ring2="Stikini Ring +1",
+		range="Dunna",
+		head="Azimuth Hood",
+		neck="Sanctity Necklace",
+		ear1="Handler's Earring",
+		ear2="Handler's Earring +1",
+		body="Jhakri Robe",
+		hands="Geo. Mitaines",
+		ring1="Gelatinous Ring",
+		ring2="Fortified Ring",
 		back=gear.idle_jse_back,
-		-- waist="Flax Sash",
-		legs="Assid. Pants",
-		feet=gear.merlinic_refresh_feet
+		waist="Isa Belt",
+		legs=gear.telchine_pet_legs,
+		feet="Bagua Sandals"
 	}
 		
 	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
@@ -321,14 +334,14 @@ function init_gear_sets()
 
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {
-		main="Bolelabunga",
+		main="Solstice",
 		-- sub="Genmei Shield",
-		range="Nepote Bell",
+		range="Dunna",
 		head="Azimuth Hood",
 		neck="Sanctity Necklace",
 		ear1="Handler's Earring",
 		ear2="Handler's Earring +1",
-		-- body="Jhakri Robe +2",
+		body="Jhakri Robe",
 		hands="Geo. Mitaines",
 		ring1="Gelatinous Ring",
 		ring2="Fortified Ring",
@@ -338,7 +351,7 @@ function init_gear_sets()
 		feet="Bagua Sandals"
 	}
 
-	sets.idle.PDT.Pet = {main="Malignance Pole",sub="Umbra Strap",range="Nepote Bell",
+	sets.idle.PDT.Pet = {main="Malignance Pole",sub="Umbra Strap",range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
 		body="Jhakri Robe +2",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
 		back=gear.idle_jse_back,waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals"}
@@ -402,19 +415,19 @@ function init_gear_sets()
 
 	-- Normal melee group
 	sets.engaged = {
-		ranged="Nepote Bell",
-		head="Befouled Crown",
-		neck="Asperity Necklace",
-		ear1="Cessance Earring",
-		ear2="Brutal Earring",
-		body="Jhakri Robe +2",
-		hands="Gazu Bracelet +1",
-		ring1="Ramuh Ring +1",
-		ring2="Ramuh Ring +1",
-		back="Kayapa Cape",
+		ranged="Dunna",
+		-- head="Befouled Crown",
+		-- neck="Asperity Necklace",
+		-- ear1="Cessance Earring",
+		-- ear2="Brutal Earring",
+		body="Jhakri Robe",
+		-- hands="Gazu Bracelet +1",
+		-- ring1="Ramuh Ring +1",
+		-- ring2="Ramuh Ring +1",
+		-- back="Kayapa Cape",
 		waist="Witful Belt",
-		legs="Assid. Pants +1",
-		feet="Battlecast Gaiters"
+		legs="Assid. Pants",
+		-- feet="Battlecast Gaiters"
 	}
 		
 	sets.engaged.DW = {ammo="Hasty Pinion +1",
