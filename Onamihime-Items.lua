@@ -13,6 +13,7 @@ sets.precast.Item['Holy Water'] = {}
 
 gear.telchine_pet_legs = {name="Telchine Braconi",augments={'Pet: "Regen"+2','Pet: Damage taken -4%',}}
 gear.telchine_enh_hands = {name="Telchine Gloves",augments={'"Conserve MP"+3',}}
+gear.telchine_enh_head = {name="Telchine Cap",augments={'"Conserve MP"+5','Enh. Mag. eff. dur. +10',}}
 gear.fc_jse_cape = { name="Alaunus's Cape", augments={'HP+30','Eva.+10 /Mag. Eva.+10','"Fast Cast"+10',}}
 
 

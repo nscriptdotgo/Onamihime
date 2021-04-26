@@ -270,7 +270,7 @@ function init_gear_sets()
 		main=gear.gada_enhancing_club,
 		sub="Ammurapi Shield",
 		ammo="Hasty Pinion +1",
-		head="Telchine Cap",
+		head=gear.telchine_enh_head,
 		neck="Incanter's Torque",
 		ear1="Andoaa Earring",
 		ear2="Gifted Earring",

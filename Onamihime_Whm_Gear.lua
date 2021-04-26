@@ -56,7 +56,7 @@ function init_gear_sets()
 		main="Gada", --5
 		-- sub="Chanter's Shield", --8
 		ammo="Incantor Stone", --2
-		body="Inyanga Jubbah", --14
+		body="Inyanga Jubbah +1", --14
 		hands="Gende. Gages +1", --7
 		legs="Ayanmo Cosciales +1", --6
 		feet="Regal Pumps +1", --7
@@ -195,7 +195,7 @@ function init_gear_sets()
 		neck="Voltsurge Torque",
 		-- ear1="Enchntr. Earring +1",
 		-- ear2="Malignance Earring",
-		body="Inyanga Jubbah",
+		body="Inyanga Jubbah +1",
 		hands="Gende. Gages +1",
 		-- ring1="Kishar Ring",
 		-- ring2="Prolix Ring",
@@ -219,6 +219,7 @@ function init_gear_sets()
 		legs="Ebers Pantaloons",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Cleric's Torque",
+		ring1="Lebeche Ring",
 		ear1="Mendicant Earring", -- (+2)/(-5)
 		ear2="Nourish. Earring +1",
 		back=gear.WHM_FC_Cape,
@@ -252,7 +253,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCure = set_combine(sets.midcast.w, {
 		main="Iridal Staff", --10
 		-- sub="Achaq Grip", --0/(-4)
-		-- hands="Telchine Gloves", --17
+		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
 	})
@@ -260,7 +261,7 @@ function init_gear_sets()
 	sets.midcast.LightWeatherCureSolace = set_combine(sets.midcast.CureSolace, {
 		main="Iridal Staff", --10
 		-- sub="Achaq Grip", --0/(-4)
-		-- hands="Telchine Gloves", --17
+		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
 	})
@@ -376,7 +377,7 @@ function init_gear_sets()
 		--main="Yagrush",
 		--sub="Chanter's Shield",
 		head="Ebers Cap",
-		body="Inyanga Jubbah",
+		body="Inyanga Jubbah +1",
 		-- hands="Fanatic Gloves",
 		-- legs="Aya. Cosciales +2",
 		feet="Regal Pumps +1",
@@ -399,7 +400,7 @@ function init_gear_sets()
 		main="Gada",
 		--sub="Ammurapi Shield",
 		sub="Sors Shield",
-		head="Telchine Cap",
+		head=gear.telchine_enh_head,
 		body="Telchine Chas.",
 		-- hands="Dynasty Mitts",
 		legs="Telchine Braconi",
@@ -418,7 +419,7 @@ function init_gear_sets()
 	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills"})
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
-		-- main="Vadose Rod",
+		main="Vadose Rod",
 		-- sub="Ammurapi Shield",
 		-- hands="Regal Cuffs",
 		-- waist="Emphatikos Rope",
@@ -426,12 +427,25 @@ function init_gear_sets()
 		head="Chironic Hat"
 	})
 
-	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {hands="Ebers Mitts",legs="Theo. Pant. +1",})
+	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {
+		hands="Ebers Mitts",
+		legs="Theo. Pant. +1"
+	})
 
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Theo. Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Theo. Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {
+		-- ring2="Sheltered Ring",
+		feet="Theo. Duckbills +1",
+		-- ear1="Gifted Earring",
+		-- waist="Sekhmet Corset"
+	})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
-	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {
+		-- ring2="Sheltered Ring",
+		legs="Piety Pantaln.",
+		-- ear1="Gifted Earring",
+		-- waist="Sekhmet Corset"
+	})
 
 	sets.midcast.BarElement = {
 		-- main="Beneficus",
@@ -469,7 +483,7 @@ function init_gear_sets()
 
 	sets.midcast['Divine Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="C. Palug Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Inyanga Jubbah +1 +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast.Holy = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
@@ -479,12 +493,12 @@ function init_gear_sets()
 
 	sets.midcast['Dark Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Inyanga Jubbah +1 +2",hands=gear.chironic_enfeeble_hands,ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands=gear.chironic_enfeeble_hands,ring1="Evanescence Ring",ring2="Archon Ring",
+		body="Inyanga Jubbah +1 +2",hands=gear.chironic_enfeeble_hands,ring1="Evanescence Ring",ring2="Archon Ring",
 		back="Aurist's Cape +1",waist="Fucho-no-obi",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
@@ -497,17 +511,17 @@ function init_gear_sets()
 
 	sets.midcast.Stun = {main=gear.grioavolr_fc_staff,sub="Clerisy Strap +1",ammo="Hasty Pinion +1",
 		head="Nahtirah Hat",neck="Voltsurge Torque",ear1="Enchntr. Earring +1",ear2="Malignance Earring",
-		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Kishar Ring",ring2="Stikini Ring +1",
+		body="Inyanga Jubbah +1 +2",hands="Fanatic Gloves",ring1="Kishar Ring",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Embla Sash",legs="Lengo Pants",feet="Regal Pumps +1"}
 
 	sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Inyanga Jubbah +1 +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast.Dispel = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
+		body="Inyanga Jubbah +1 +2",hands="Fanatic Gloves",ring1="Stikini Ring +1",ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",waist="Acuity Belt +1",legs="Chironic Hose",feet=gear.chironic_nuke_feet}
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
@@ -587,12 +601,12 @@ function init_gear_sets()
 
 	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum +1",
 		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Inyanga Jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Shadow Ring",
+		body="Inyanga Jubbah +1 +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Shadow Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Th. Pant. +3",feet="Gende. Galosh. +1"}
 
 	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
-		head="Telchine Cap",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Inyanga Jubbah +2",hands="Telchine Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
+		head=gear.telchine_enh_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		body="Inyanga Jubbah +1 +2",hands="Telchine Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
 		back="Aurist's Cape +1",waist="Luminary Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
 
 		-- Engaged sets
