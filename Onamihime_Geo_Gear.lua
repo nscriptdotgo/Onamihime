@@ -51,7 +51,7 @@ function init_gear_sets()
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Bolster = {body="Bagua Tunic"}
 	sets.precast.JA['Life Cycle'] = {body="Geo. Tunic",back=gear.idle_jse_back}
-	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals"}
+	sets.precast.JA['Radial Arcana'] = {feet="Bagua Sandals +1"}
 	sets.precast.JA['Mending Halation'] = {legs="Bagua Pants"}
 	sets.precast.JA['Full Circle'] = {head="Azimuth Hood",hands="Bagua Mitaines"}
 	
@@ -64,20 +64,20 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {
-		main=gear.grioavolr_fc_staff,
-		sub="Clerisy Strap +1",
-		ammo="Impatiens",
-		head="Amalric Coif +1",
+		-- main=gear.grioavolr_fc_staff,
+		-- sub="Clerisy Strap +1",
+		-- ammo="Impatiens",
+		-- head="Amalric Coif +1",
 		neck="Voltsurge Torque",
-		ear1="Enchntr. Earring +1",
-		ear2="Malignance Earring",
-		body="Zendik Robe",
-		hands="Volte Gloves",
-		ring1="Kishar Ring",
+		ear1="Loquacious Earring",
+		-- ear2="Malignance Earring",
+		-- body="Zendik Robe",
+		-- hands="Volte Gloves",
+		-- ring1="Kishar Ring",
 		ring2="Lebeche Ring",
 		back=gear.mndenfeeb_jse_back,
 		waist="Witful Belt",
-		legs="Geo. Pants",
+		legs="Geo. Pants +1",
 		feet="Regal Pumps +1"
 	}
 
@@ -130,7 +130,7 @@ function init_gear_sets()
 		-- ear1="Gifted Earring",
 		-- ear2="Malignance Earring",
 		-- body="Vedic Coat",
-		hands="Geo. Mitaines",
+		hands="Geo. Mitaines +1",
 		-- ring1="Defending Ring",
 		-- ring2="Dark Ring",
 		back="Solemnity Cape",
@@ -170,10 +170,23 @@ function init_gear_sets()
 	
 	sets.midcast.StatusRemoval = set_combine(sets.midcast.FastRecast, {main=gear.grioavolr_fc_staff,sub="Clemency Grip"})
 	
-    sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Dosis Tathlum",
-        head=gear.merlinic_nuke_head,neck="Saevus Pendant +1",ear1="Crematio Earring",ear2="Friomisi Earring",
-        body=gear.merlinic_nuke_body,hands="Mallquis Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
-        back=gear.nuke_jse_back,waist=gear.ElementalObi,legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+    sets.midcast['Elemental Magic'] = {
+		-- main="Daybreak",
+		-- sub="Ammurapi Shield",
+		-- ammo="Dosis Tathlum",
+        -- head=gear.merlinic_nuke_head,
+		-- neck="Saevus Pendant +1",
+		-- ear1="Crematio Earring",
+		-- ear2="Friomisi Earring",
+        -- body=gear.merlinic_nuke_body,
+		hands="Mallquis Cuffs +1",
+		-- ring1="Shiva Ring +1",
+		-- ring2="Freke Ring",
+        -- back=gear.nuke_jse_back,
+		-- waist=gear.ElementalObi,
+		-- legs="Merlinic Shalwar",
+		-- feet=gear.merlinic_nuke_feet
+	}
 
     sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
         head=gear.merlinic_nuke_head,neck="Sanctity Necklace",ear1="Regal Earring",ear2="Malignance Earring",
@@ -317,14 +330,14 @@ function init_gear_sets()
 		neck="Sanctity Necklace",
 		ear1="Handler's Earring",
 		ear2="Handler's Earring +1",
-		body="Jhakri Robe",
-		hands="Geo. Mitaines",
+		body="Jhakri Robe +1",
+		hands="Geo. Mitaines +1",
 		ring1="Gelatinous Ring",
 		ring2="Fortified Ring",
 		back=gear.idle_jse_back,
 		waist="Isa Belt",
 		legs=gear.telchine_pet_legs,
-		feet="Bagua Sandals"
+		feet="Bagua Sandals +1"
 	}
 		
 	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
@@ -341,20 +354,20 @@ function init_gear_sets()
 		neck="Sanctity Necklace",
 		ear1="Handler's Earring",
 		ear2="Handler's Earring +1",
-		body="Jhakri Robe",
-		hands="Geo. Mitaines",
+		body="Jhakri Robe +1",
+		hands="Geo. Mitaines +1",
 		ring1="Gelatinous Ring",
 		ring2="Fortified Ring",
 		back=gear.idle_jse_back,
 		waist="Isa Belt",
 		legs=gear.telchine_pet_legs,
-		feet="Bagua Sandals"
+		feet="Bagua Sandals +1"
 	}
 
 	sets.idle.PDT.Pet = {main="Malignance Pole",sub="Umbra Strap",range="Dunna",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Jhakri Robe +2",hands="Geo. Mitaines +3",ring1="Defending Ring",ring2="Dark Ring",
-		back=gear.idle_jse_back,waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals"}
+		body="Jhakri Robe +2",hands="Geo. Mitaines +1",ring1="Defending Ring",ring2="Dark Ring",
+		back=gear.idle_jse_back,waist="Isa Belt",legs="Hagondes Pants +1",feet="Bagua Sandals +1"}
 
 	-- .Indi sets are for when an Indi-spell is active.
 	sets.idle.Indi = set_combine(sets.idle, {})
@@ -420,7 +433,7 @@ function init_gear_sets()
 		-- neck="Asperity Necklace",
 		-- ear1="Cessance Earring",
 		-- ear2="Brutal Earring",
-		body="Jhakri Robe",
+		body="Jhakri Robe +1",
 		-- hands="Gazu Bracelet +1",
 		-- ring1="Ramuh Ring +1",
 		-- ring2="Ramuh Ring +1",

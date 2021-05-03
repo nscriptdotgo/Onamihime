@@ -82,7 +82,7 @@ function init_gear_sets()
 		head="Vanya Hood",
 		legs="Ebers Pantaloons", --12
 		ear1="Mendi. Earring", --5
-		ear2="Nourish. Earring +1", --4
+		ear2="Glorious Earring", --4
 		ring1="Lebeche Ring", --(2)
 		back=gear.WHM_FC_Cape, --10
 		--back="Perimede Cape", --(4)
@@ -221,7 +221,7 @@ function init_gear_sets()
 		neck="Cleric's Torque",
 		ring1="Lebeche Ring",
 		ear1="Mendicant Earring", -- (+2)/(-5)
-		ear2="Nourish. Earring +1",
+		ear2="Glorious Earring",
 		back=gear.WHM_FC_Cape,
 		waist="Cleric's Belt",
 	}
@@ -239,7 +239,7 @@ function init_gear_sets()
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Incanter's Torque",
 		ear1="Mendicant's Earring", -- (+2)/(-5)
-		ear2="Nourish. Earring +1",
+		ear2="Glorious Earring",
 		--ear2="Meili Earring",
 		ring1="Lebeche Ring", --3/(-5)
 		--ring2={name="Haoma's Ring", bag="wardrobe3"},
@@ -432,14 +432,24 @@ function init_gear_sets()
 		legs="Theo. Pant. +1"
 	})
 
-	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",feet="Theo. Duckbills +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {
+		-- ring2="Sheltered Ring",
+		feet="Theo. Duckbills +1",
+		-- ear1="Gifted Earring",
+		-- waist="Sekhmet Corset"
+	})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {
 		-- ring2="Sheltered Ring",
 		feet="Theo. Duckbills +1",
 		-- ear1="Gifted Earring",
 		-- waist="Sekhmet Corset"
 	})
-	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {ring2="Sheltered Ring",legs="Piety Pantaln. +1",ear1="Gifted Earring",waist="Sekhmet Corset"})
+	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {
+		-- ring2="Sheltered Ring",
+		legs="Piety Pantaln.",
+		-- ear1="Gifted Earring",
+		-- waist="Sekhmet Corset"
+	})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {
 		-- ring2="Sheltered Ring",
 		legs="Piety Pantaln.",
@@ -526,15 +536,41 @@ function init_gear_sets()
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 
-	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Theophany Briault +1",hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Uk'uxkaj Boots"}
+	sets.midcast['Enfeebling Magic'] = {
+		-- main="Daybreak",
+		-- sub="Ammurapi Shield",
+		-- ammo="Pemphredo Tathlum",
+		-- head="Befouled Crown",
+		-- neck="Erra Pendant",
+		-- ear1="Regal Earring",
+		-- ear2="Digni. Earring",
+		body="Theophany Briault +1",
+		-- hands="Regal Cuffs",
+		-- ring1="Kishar Ring",
+		-- ring2="Stikini Ring +1",
+		-- back="Aurist's Cape +1",
+		-- waist="Luminary Sash",
+		-- legs="Chironic Hose",
+		-- feet="Uk'uxkaj Boots"
+	}
 
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body="Theophany Briault +1",hands="Theophany Mitts +1",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Chironic Hose",feet="Theo. Duckbills +1"}
+	sets.midcast['Enfeebling Magic'].Resistant = {
+		main="Daybreak",
+		sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head="Befouled Crown",
+		neck="Erra Pendant",
+		ear1="Regal Earring",
+		ear2="Digni. Earring",
+		body="Theophany Briault +1",
+		hands="Theophany Mitts +1",
+		ring1="Metamor. Ring +1",
+		ring2="Stikini Ring +1",
+		back="Aurist's Cape +1",
+		waist="Luminary Sash",
+		legs="Chironic Hose",
+		feet="Theo. Duckbills +1"
+	}
 
 	sets.midcast.Dia = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
 	sets.midcast.Diaga = set_combine(sets.midcast['Enfeebling Magic'], sets.TreasureHunter)
@@ -561,8 +597,8 @@ function init_gear_sets()
 
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
+		ammo="Homiliary",
 		main="Bolelabunga",
-		-- main="Queller Rod",
 		sub="Sors Shield",
 		head="Inyanga Tiara",
 		body="Theo. Briault +1",
@@ -570,6 +606,8 @@ function init_gear_sets()
 		legs="Assiduity Pants",
 		feet="Herald's Gaiters",
 		neck="Sanctity Necklace",
+		ear1="Mendicant's Earring",
+		ear2="Influx Earring",
 		ring1="Gelatinous Ring",
 		ring2="Inyanga Ring",
 		back=gear.WHM_FC_Cape,
