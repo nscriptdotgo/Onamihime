@@ -340,10 +340,23 @@ function init_gear_sets()
 		feet="Bagua Sandals +1"
 	}
 		
-	sets.idle.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Genmei Earring",ear2="Ethereal Earring",
-		body="Jhakri Robe +2",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Shadow Mantle",waist="Flax Sash",legs="Hagondes Pants +1",feet="Mallquis Clogs +2"}
+	sets.idle.PDT = {
+		main="Malignance Pole",
+		sub="Umbra Strap",
+		ammo="Staunch Tathlum +1",
+		head="Hagondes Hat +1",
+		neck="Loricate Torque +1",
+		ear1="Genmei Earring",
+		ear2="Ethereal Earring",
+		body="Jhakri Robe +2",
+		hands="Hagondes Cuffs +1",
+		ring1="Defending Ring",
+		ring2="Shadow Ring",
+		back="Shadow Mantle",
+		waist="Flax Sash",
+		legs="Hagondes Pants +1",
+		feet="Mallquis Clogs +2"
+	}
 
 	-- .Pet sets are for when Luopan is present.
 	sets.idle.Pet = {
