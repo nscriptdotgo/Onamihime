@@ -139,18 +139,18 @@ function init_gear_sets()
 		main="Solstice",
 		-- sub="Genmei Shield",
 		range="Dunna",
-		head="Vanya Hood",
-		-- neck="Incanter's Torque",
+		head="Azimuth Hood",
+		neck="Deceiver's Torque",
 		-- ear1="Gifted Earring",
 		-- ear2="Malignance Earring",
-		-- body="Vedic Coat",
+		body="Bagua Tunic",
 		hands="Geo. Mitaines +1",
 		-- ring1="Defending Ring",
-		-- ring2="Dark Ring",
+		ring2="Stikini Ring",
 		back="Solemnity Cape",
 		waist="Austerity Belt +1",
 		legs="Vanya Slops",
-		-- feet="Medium's Sabots"
+		feet="Vanya Clogs"
 	}
 
 
