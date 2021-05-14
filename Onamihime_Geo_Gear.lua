@@ -73,7 +73,7 @@ function init_gear_sets()
 		-- ear2="Malignance Earring",
 		-- body="Zendik Robe",
 		-- hands="Volte Gloves",
-		-- ring1="Kishar Ring",
+		ring1="Weatherspoon Ring",
 		ring2="Lebeche Ring",
 		back=gear.mndenfeeb_jse_back,
 		waist="Witful Belt",

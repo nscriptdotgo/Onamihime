@@ -63,8 +63,8 @@ function init_gear_sets()
 		neck="Voltsurge Torque", --4
 		ear1="Loquacious Earring", --2
 		-- ear2="Etiolation Earring", --1
-		-- ring1="Kishar Ring", --4
-		-- ring2="Weather. Ring", --6(4)
+		ring1="Lebeche Ring", --4
+		ring2="Weather. Ring", --6(4)
 		back=gear.WHM_FC_Cape,
 		waist="Embla Sash", --5
 	}
