@@ -64,7 +64,7 @@ function init_gear_sets()
 	-- Fast cast sets for spells
 
 	sets.precast.FC = {
-		-- main=gear.grioavolr_fc_staff,
+		main=gear.grioavolr_fc_staff,
 		-- sub="Clerisy Strap +1",
 		-- ammo="Impatiens",
 		-- head="Amalric Coif +1",
@@ -92,9 +92,23 @@ function init_gear_sets()
 		
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 	
-	sets.Self_Healing = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"}
-	sets.Cure_Received = {neck="Phalaina Locket",ring1="Kunaji Ring",ring2="Asklepian Ring",waist="Gishdubar Sash"}
-	sets.Self_Refresh = {back="Grapevine Cape",waist="Gishdubar Sash",feet="Inspirited Boots"}
+	sets.Self_Healing = {
+		-- neck="Phalaina Locket",
+		-- ring1="Kunaji Ring",
+		-- ring2="Asklepian Ring",
+		waist="Gishdubar Sash"
+	}
+	sets.Cure_Received = {
+		-- neck="Phalaina Locket",
+		-- ring1="Kunaji Ring",
+		-- ring2="Asklepian Ring",
+		waist="Gishdubar Sash"
+	}
+	sets.Self_Refresh = {
+		-- back="Grapevine Cape",
+		waist="Gishdubar Sash",
+		-- feet="Inspirited Boots"
+	}
 	
     sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
@@ -280,18 +294,18 @@ function init_gear_sets()
 	sets.midcast['Divine Magic'] = set_combine(sets.midcast['Enfeebling Magic'], {ring1="Stikini Ring +1"})
 		
 	sets.midcast['Enhancing Magic'] = {
-		main=gear.gada_enhancing_club,
-		sub="Ammurapi Shield",
+		-- main=gear.gada_enhancing_club,
+		-- sub="Ammurapi Shield",
 		ammo="Hasty Pinion +1",
 		head=gear.telchine_enh_head,
-		neck="Incanter's Torque",
-		ear1="Andoaa Earring",
-		ear2="Gifted Earring",
+		-- neck="Incanter's Torque",
+		-- ear1="Andoaa Earring",
+		-- ear2="Gifted Earring",
 		body="Telchine Chas.",
 		hands="Telchine Gloves",
-		ring1="Stikini Ring +1",
-		ring2="Stikini Ring +1",
-		back="Perimede Cape",
+		ring1="Stikini Ring",
+		-- ring2="Stikini Ring +1",
+		-- back="Perimede Cape",
 		waist="Embla Sash",
 		legs="Telchine Braconi",
 		feet="Telchine Pigaches"
@@ -324,7 +338,7 @@ function init_gear_sets()
 
 	sets.idle = {
 		main="Solstice",
-		-- sub="Genmei Shield",
+		sub="Sors Shield",
 		range="Dunna",
 		head="Azimuth Hood",
 		neck="Sanctity Necklace",
@@ -341,20 +355,20 @@ function init_gear_sets()
 	}
 		
 	sets.idle.PDT = {
-		main="Malignance Pole",
-		sub="Umbra Strap",
-		ammo="Staunch Tathlum +1",
-		head="Hagondes Hat +1",
-		neck="Loricate Torque +1",
-		ear1="Genmei Earring",
-		ear2="Ethereal Earring",
-		body="Jhakri Robe +2",
-		hands="Hagondes Cuffs +1",
-		ring1="Defending Ring",
+		-- main="Malignance Pole",
+		-- sub="Umbra Strap",
+		-- ammo="Staunch Tathlum +1",
+		-- head="Hagondes Hat +1",
+		-- neck="Loricate Torque +1",
+		-- ear1="Genmei Earring",
+		-- ear2="Ethereal Earring",
+		body="Jhakri Robe +1",
+		-- hands="Hagondes Cuffs +1",
+		-- ring1="Defending Ring",
 		ring2="Shadow Ring",
 		back="Shadow Mantle",
-		waist="Flax Sash",
-		legs="Hagondes Pants +1",
+		-- waist="Flax Sash",
+		-- legs="Hagondes Pants +1",
 		feet="Mallquis Clogs +2"
 	}
 
@@ -388,10 +402,23 @@ function init_gear_sets()
 	sets.idle.PDT.Indi = set_combine(sets.idle.PDT, {}) 
 	sets.idle.PDT.Pet.Indi = set_combine(sets.idle.PDT.Pet, {})
 
-	sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flax Sash",legs="Assid. Pants +1",feet="Azimuth Gaiters +1"}
+	sets.idle.Weak = {
+		main="Bolelabunga",
+		-- sub="Genmei Shield",
+		-- ammo="Staunch Tathlum +1",
+		-- head="Befouled Crown",
+		-- neck="Loricate Torque +1",
+		-- ear1="Etiolation Earring",
+		-- ear2="Ethereal Earring",
+		body="Jhakri Robe +1",
+		-- hands=gear.merlinic_refresh_hands,
+		-- ring1="Defending Ring",
+		-- ring2="Dark Ring",
+		-- back="Umbra Cape",
+		-- waist="Flax Sash",
+		legs="Assid. Pants",
+		feet="Azimuth Gaiters"
+	}
 
 	-- Defense sets
 	
