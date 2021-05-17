@@ -342,7 +342,7 @@ function init_gear_sets()
 		range="Dunna",
 		head="Azimuth Hood",
 		neck="Sanctity Necklace",
-		ear1="Handler's Earring",
+		ear1="Moonshade Earring",
 		ear2="Handler's Earring +1",
 		body="Jhakri Robe +1",
 		hands="Geo. Mitaines +1",

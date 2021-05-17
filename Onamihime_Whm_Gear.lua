@@ -607,7 +607,7 @@ function init_gear_sets()
 		feet="Herald's Gaiters",
 		neck="Sanctity Necklace",
 		ear1="Mendicant's Earring",
-		ear2="Influx Earring",
+		ear2="Moonshade Earring",
 		ring1="Gelatinous Ring",
 		ring2="Inyanga Ring",
 		back=gear.WHM_FC_Cape,
