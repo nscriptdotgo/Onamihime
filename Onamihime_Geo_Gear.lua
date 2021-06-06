@@ -70,7 +70,7 @@ function init_gear_sets()
 		-- head="Amalric Coif +1",
 		neck="Voltsurge Torque",
 		ear1="Loquacious Earring",
-		-- ear2="Malignance Earring",
+		ear2="Malignance Earring",
 		-- body="Zendik Robe",
 		-- hands="Volte Gloves",
 		ring1="Weatherspoon Ring",
@@ -266,10 +266,25 @@ function init_gear_sets()
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 		
-	sets.midcast['Enfeebling Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body=gear.merlinic_nuke_body,hands="Regal Cuffs",ring1="Kishar Ring",ring2="Stikini Ring +1",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Uk'uxkaj Boots"}
+	sets.midcast['Enfeebling Magic'] = {
+		-- main="Daybreak",
+		-- sub="Ammurapi Shield",
+		main=gear.grioavolr_fc_staff,
+		sub="Enki Strap",
+		ammo="Plumrose Sachet",
+		head="Mallquis Chapeau +1",
+		neck="Volsurge Torque",
+		-- ear1="Regal Earring",
+		ear2="Influx Earring",
+		-- body=gear.merlinic_nuke_body,
+		hands="Mallquis Cuffs +1",
+		ring1="Weatherspoon Ring",
+		ring2="Stikini Ring",
+		back=gear.mndenfeeb_jse_back,
+		-- waist="Luminary Sash",
+		legs="Psycloth Lappas",
+		feet="Uk'uxkaj Boots"
+	}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
@@ -416,7 +431,7 @@ function init_gear_sets()
 		-- ring2="Dark Ring",
 		-- back="Umbra Cape",
 		-- waist="Flax Sash",
-		legs="Assid. Pants",
+		legs="Assid. Pants +1",
 		feet="Azimuth Gaiters"
 	}
 
@@ -479,7 +494,7 @@ function init_gear_sets()
 		-- ring2="Ramuh Ring +1",
 		-- back="Kayapa Cape",
 		waist="Witful Belt",
-		legs="Assid. Pants",
+		legs="Assid. Pants +1",
 		-- feet="Battlecast Gaiters"
 	}
 		

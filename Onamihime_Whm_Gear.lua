@@ -62,7 +62,7 @@ function init_gear_sets()
 		feet="Regal Pumps +1", --7
 		neck="Voltsurge Torque", --4
 		ear1="Loquacious Earring", --2
-		-- ear2="Etiolation Earring", --1
+		ear2="Malignance Earring", --1
 		ring1="Lebeche Ring", --4
 		ring2="Weather. Ring", --6(4)
 		back=gear.WHM_FC_Cape,
@@ -603,7 +603,7 @@ function init_gear_sets()
 		head="Inyanga Tiara",
 		body="Theo. Briault +1",
 		hands="Inyan. Dastanas +1",
-		legs="Assiduity Pants",
+		legs="Assiduity Pants +1",
 		feet="Herald's Gaiters",
 		neck="Sanctity Necklace",
 		ear1="Mendicant's Earring",
