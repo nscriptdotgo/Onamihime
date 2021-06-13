@@ -401,7 +401,7 @@ function init_gear_sets()
 		--sub="Ammurapi Shield",
 		sub="Sors Shield",
 		head=gear.telchine_enh_head,
-		body="Telchine Chas.",
+		body=gear.telchine_enh_body,
 		-- hands="Dynasty Mitts",
 		legs="Telchine Braconi",
 		feet="Theo. Duckbills +1",
