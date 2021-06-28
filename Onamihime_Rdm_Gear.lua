@@ -452,7 +452,10 @@ function init_gear_sets()
 	
 	-- Weapons sets
 	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
-	sets.weapons.Naegling = {main="Naegling",sub="Ammurapi Shield"}
+	sets.weapons.Naegling = {
+		main="Excalipoor",
+		-- sub="Ammurapi Shield"
+	}
 	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Thibron"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace"}
@@ -484,19 +487,19 @@ function init_gear_sets()
 
 	sets.engaged = {
 		main="Ajja Sword",
-		ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
-		neck="Asperity Necklace",
-		ear1="Brutal Earring",
-		ear2="Sherida Earring",
-		body="Ayanmo Corazza +2",
-		hands="Malignance Gloves",
-		ring1="Petrov Ring",
-		ring2="Ilabrat Ring",
+		-- ammo="Aurgelmir Orb +1",
+		-- head="Malignance Chapeau",
+		-- neck="Asperity Necklace",
+		-- ear1="Brutal Earring",
+		-- ear2="Sherida Earring",
+		body="Ayanmo Corazza +1",
+		hands="Ayanmo Manopolas +1",
+		-- ring1="Petrov Ring",
+		-- ring2="Ilabrat Ring",
 		back=gear.stp_jse_back,
-		waist="Windbuffet Belt +1",
-		legs="Malignance Tights",
-		feet="Carmine Greaves +1"
+		waist="Kentarch Belt",
+		legs="Ayanmo Cosciales +1",
+		feet="Ayanmo Gambieras +1"
 	}
 		
 	sets.engaged.EnspellOnly = {
