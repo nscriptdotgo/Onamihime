@@ -486,7 +486,7 @@ function init_gear_sets()
 --		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged = {
-		main="Ajja Sword",
+		main="Eletta Sword",
 		-- ammo="Aurgelmir Orb +1",
 		-- head="Malignance Chapeau",
 		-- neck="Asperity Necklace",
