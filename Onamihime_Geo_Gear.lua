@@ -23,7 +23,7 @@ function user_job_setup()
 	gear.obi_high_nuke_waist = "Refoccilation Stone"
 	
 	autoindi = 'Haste'
-	autogeo = 'Frailty'w
+	autogeo = 'Frailty'
 	autoentrust = 'Fury'
 	autoentrustee = 'Katagiri'
 	
