@@ -58,7 +58,7 @@ function init_gear_sets()
 	-- Precast Sets
 	
 	-- Precast sets to enhance JAs
-	sets.precast.JA['Chainspell'] = {body="Viti. Tabard +3"}
+	sets.precast.JA['Chainspell'] = {body="Viti. Tabard"}
 	
 
 	-- Waltz set (chr and vit)
