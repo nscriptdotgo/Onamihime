@@ -372,20 +372,18 @@ function init_gear_sets()
 	}
 		
 	sets.idle.PDT = {
-		-- main="Malignance Pole",
-		-- sub="Umbra Strap",
-		-- ammo="Staunch Tathlum +1",
-		-- head="Hagondes Hat +1",
-		-- neck="Loricate Torque +1",
-		-- ear1="Genmei Earring",
-		-- ear2="Ethereal Earring",
-		body="Jhakri Robe +2",
-		-- hands="Hagondes Cuffs +1",
-		-- ring1="Defending Ring",
-		ring2="Shadow Ring",
-		back="Shadow Mantle",
-		-- waist="Flax Sash",
-		-- legs="Hagondes Pants +1",
+		main="Malignance Pole",
+		-- head="Befouled Crown",
+		range="Dunna",
+		neck="Loricate Torque +1",
+		ear1="Moonshade Earring",
+		-- ear2="Etiolation Earring",
+		body="Mallquis Saio +1",
+		hands="Geo. Mitaines +1",
+		ring1="Gelatinous Ring",
+		ring2="Fortified Ring",
+		back=gear.idle_jse_back,
+		legs="Assid. Pants +1",
 		feet="Mallquis Clogs +2"
 	}
 
@@ -439,10 +437,21 @@ function init_gear_sets()
 
 	-- Defense sets
 	
-	sets.defense.PDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Hagondes Hat +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
-		body="Mallquis Saio +2",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet="Azimuth Gaiters +1"}
+	sets.defense.PDT = {
+		main="Malignance Pole",
+		-- head="Befouled Crown",
+		range="Dunna",
+		neck="Loricate Torque +1",
+		ear1="Moonshade Earring",
+		-- ear2="Etiolation Earring",
+		body="Mallquis Saio +1",
+		hands="Geo. Mitaines +1",
+		ring1="Gelatinous Ring",
+		ring2="Fortified Ring",
+		back=gear.idle_jse_back,
+		legs="Assid. Pants +1",
+		feet="Mallquis Clogs +2"
+	}
 
 	sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
 		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
