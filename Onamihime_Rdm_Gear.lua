@@ -182,7 +182,6 @@ function init_gear_sets()
 		waist="Luminary Sash",
 		legs="Carmine Cuisses +1",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-
 	}
 		
     sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",range=empty,ammo="Hasty Pinion +1",
@@ -368,7 +367,7 @@ function init_gear_sets()
 		
 	sets.buff.Saboteur = {hands="Leth. Gantherots +1"}
 	
-	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendicant's Earring",ear2="Evans Earring",
+	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendi. Earring",ear2="Evans Earring",
 		body="Jhakri Robe +2",hands="Jhakri Cuffs +2",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
 		back="Swith Cape +1",legs="Shedir Seraweels",feet="Jhakri Pigaches +2"}
 		
@@ -395,7 +394,7 @@ function init_gear_sets()
 		-- range=empty,
 		ammo="Homiliary",
 		head="Vitiation Chapeau",
-		-- neck="Loricate Torque +1",
+		neck="Loricate Torque +1",
 		ear1="Moonshade Earring",
 		-- ear2="Ethereal Earring",
 		body="Jhakri Robe +2",

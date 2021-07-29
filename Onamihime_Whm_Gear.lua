@@ -53,12 +53,13 @@ function init_gear_sets()
 
 	-- Fast cast sets for spells
 	sets.precast.FC = {
-		main="Gada", --5
-		-- sub="Chanter's Shield", --8
+		main="Grioavolr", --5
+		sub="Clerisy Strap", --8
 		ammo="Incantor Stone", --2
+		head="Nahtirah Hat",
 		body="Inyanga Jubbah +1", --14
 		hands="Gende. Gages +1", --7
-		legs="Ayanmo Cosciales +1", --6
+		legs="Aya. Cosciales +2", --6
 		feet="Regal Pumps +1", --7
 		neck="Voltsurge Torque", --4
 		ear1="Loquacious Earring", --2
@@ -71,23 +72,16 @@ function init_gear_sets()
 
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
 
-	sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {
-
-	})
+	sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
 	sets.precast.FC['Healing Magic'] = set_combine(sets.precast.FC, {
 		ammo="Incantor Stone",
 		main="Queller Rod",
 		sub="Sors Shield",
-		head="Vanya Hood",
 		legs="Ebers Pantaloons", --12
 		ear1="Mendi. Earring", --5
-		ear2="Glorious Earring", --4
-		ring1="Lebeche Ring", --(2)
+		ear2="Nourish. Earring +1", --4
 		back=gear.WHM_FC_Cape, --10
-		--back="Perimede Cape", --(4)
-		feet="Vanya Clogs",
-		waist="Embla Sash", --3(3)
 	})
 
 	sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
@@ -144,7 +138,7 @@ function init_gear_sets()
 	sets.latent_refresh_grip = {sub="Oneiros Grip"}
 	sets.TPEat = {neck="Chrys. Torque"}
 	sets.DayIdle = {}
-	sets.NightIdle = {back="Umbra Cape"}
+	sets.NightIdle = {}
 	sets.TreasureHunter = set_combine(sets.TreasureHunter, {feet=gear.chironic_treasure_feet})
 
 	--Situational sets: Gear that is equipped on certain targets
@@ -188,13 +182,13 @@ function init_gear_sets()
 	sets.MagicBurst = {main=gear.grioavolr_nuke_staff,sub="Enki Strap",neck="Mizu. Kubikazari",ring1="Mujin Band",ring2="Locus Ring"}
 
 	sets.midcast.FastRecast = {
-		-- main=gear.grioavolr_fc_staff,
-		-- sub="Clerisy Strap +1",
+		main=gear.grioavolr_fc_staff,
+		sub="Clerisy Strap",
 		ammo="Hasty Pinion +1",
-		-- head="Nahtirah Hat",
+		head="Nahtirah Hat",
 		neck="Voltsurge Torque",
 		-- ear1="Enchntr. Earring +1",
-		-- ear2="Malignance Earring",
+		ear2="Malignance Earring",
 		body="Inyanga Jubbah +1",
 		hands="Gende. Gages +1",
 		-- ring1="Kishar Ring",
@@ -212,15 +206,16 @@ function init_gear_sets()
 	sets.midcast.Cure = {
 		main="Queller Rod", --15(+2)/(-15)
 		sub="Sors Shield", --3/(-5)
-		ammo="Incantor Stone",
+		ammo="Hydrocera",
 		head="Vanya Hood", --18/(-8)
-		body="Ebers Bliaut",
-		hands="Telchine Gloves", --(+4)/(-7)
+		body="Vanya Robe",
+		hands="Theophany Mitts +1", --(+4)/(-7)
 		legs="Ebers Pantaloons",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Cleric's Torque",
 		ring1="Lebeche Ring",
-		ear1="Mendicant Earring", -- (+2)/(-5)
+		ring2={name="Ephedra Ring", bag="wardrobe2"},
+		ear1="Mendi, Earring", -- (+2)/(-5)
 		ear2="Glorious Earring",
 		back=gear.WHM_FC_Cape,
 		waist="Cleric's Belt",
@@ -231,20 +226,18 @@ function init_gear_sets()
 		sub="Sors Shield", --3/(-5)
 		--ammo="Esper Stone +1", --0/(-5)
 		ammo="Hydrocera",
-		head="Gende. Caubeen +1", --18/(-8)
+		head="Vanya Hood", --18/(-8)
 		body="Ebers Bliaut",
 		hands="Theophany Mitts +1", --(+4)/(-7)
 		legs="Ebers Pantaloons",
 		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
-		neck="Incanter's Torque",
+		neck="Cleric's Torque",
 		ear1="Mendicant's Earring", -- (+2)/(-5)
 		ear2="Glorious Earring",
 		--ear2="Meili Earring",
 		ring1="Lebeche Ring", --3/(-5)
-		--ring2={name="Haoma's Ring", bag="wardrobe3"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		--back=gear.WHM_Cure_Cape, --0/(-10)
 		back=gear.WHM_FC_Cape,
 		--waist="Bishop's Sash",
 		waist="Cleric's Belt",
@@ -252,7 +245,7 @@ function init_gear_sets()
 
 	sets.midcast.LightWeatherCure = set_combine(sets.midcast.w, {
 		main="Iridal Staff", --10
-		-- sub="Achaq Grip", --0/(-4)
+		sub="Enki Strap", --0/(-4)
 		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
@@ -260,7 +253,7 @@ function init_gear_sets()
 
 	sets.midcast.LightWeatherCureSolace = set_combine(sets.midcast.CureSolace, {
 		main="Iridal Staff", --10
-		-- sub="Achaq Grip", --0/(-4)
+		sub="Enki Strap", --0/(-4)
 		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
@@ -278,12 +271,11 @@ function init_gear_sets()
 
 	sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
 		ear1="Mendi. Earring",
-
 	})
 
 	sets.midcast.LightWeatherCuraga = set_combine(sets.midcast.Cure, {
 		main="Iridal Staff", --10
-		-- sub="Achaq Grip", --0/(-4)
+		sub="Enki Strap", --0/(-4)
 		hands="Telchine Gloves", --17
 		-- back="Twilight Cape",
 		-- waist="Hachirin-no-Obi",
@@ -356,7 +348,7 @@ function init_gear_sets()
 	sets.midcast.MeleeLightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 
 	sets.midcast.Cursna = {
-		-- main="Yagrush",
+		main="Gada",
 		-- sub="Chanter's Shield",
 		body="Ebers Bliaut",
 		-- hands="Fanatic Gloves", --15
@@ -374,15 +366,15 @@ function init_gear_sets()
 	}
 
 	sets.midcast.StatusRemoval = {
-		--main="Yagrush",
+		main="Gada",
 		--sub="Chanter's Shield",
 		head="Ebers Cap",
 		body="Inyanga Jubbah +1",
 		-- hands="Fanatic Gloves",
-		-- legs="Aya. Cosciales +2",
+		legs="Aya. Cosciales +2",
 		feet="Regal Pumps +1",
-		-- neck="Baetyl Pendant",
-		-- ear1="Loquacious Earring",
+		neck="Voltsurge Torque",
+		ear1="Loquacious Earring",
 		-- ear2="Etiolation Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
@@ -402,16 +394,16 @@ function init_gear_sets()
 		sub="Sors Shield",
 		head=gear.telchine_enh_head,
 		body=gear.telchine_enh_body,
-		-- hands="Dynasty Mitts",
+		hands=gear.telchine_enh_hands,
 		legs="Telchine Braconi",
 		feet="Theo. Duckbills +1",
 		-- neck="Incanter's Torque",
-		-- ear1="Mimir Earring",
-		-- ear2="Andoaa Earring",
-		-- ring1={name="Stikini Ring +1", bag="wardrobe3"},
+		ear1="Mimir Earring",
+		ear2="Andoaa Earring",
+		ring1="Stikini Ring",
 		-- ring2={name="Stikini Ring +1", bag="wardrobe4"},
 		-- back="Fi Follet Cape +1",
-		-- waist="Olympus Sash",
+		waist="Olympus Sash",
 	}
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
@@ -428,6 +420,8 @@ function init_gear_sets()
 	})
 
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {
+		main="Bolelabunga",
+		head="Inyanga Tiara",
 		hands="Ebers Mitts",
 		legs="Theo. Pant. +1"
 	})
@@ -464,11 +458,11 @@ function init_gear_sets()
 		ammo="Hasty Pinion +1",
 		head="Ebers Cap",
 		-- neck="Incanter's Torque",
-		-- ear1="Andoaa Earring",
-		-- ear2="Gifted Earring",
+		ear1="Mimir Earring",
+		ear2="Andoaa Earring",
 		body="Ebers Bliaut",
 		hands="Ebers Mitts",
-		-- ring1="Stikini Ring +1",
+		ring1="Stikini Ring",
 		-- ring2="Stikini Ring +1",
 		back="Alaunus's Cape",
 		waist="Olympus Sash",
@@ -604,7 +598,7 @@ function init_gear_sets()
 		body="Theo. Briault +1",
 		hands="Inyan. Dastanas +1",
 		legs="Assiduity Pants +1",
-		feet="Herald's Gaiters",
+		feet="Inyan. Crackows +1",
 		neck="Sanctity Necklace",
 		ear1="Mendicant's Earring",
 		ear2="Moonshade Earring",
@@ -615,12 +609,12 @@ function init_gear_sets()
 		waist="Fucho-no-Obi",
 	}
 
-	sets.idle.PDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.idle.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
 		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
-	sets.idle.MDT = {main="Daybreak",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
 		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
