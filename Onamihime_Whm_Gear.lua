@@ -295,7 +295,7 @@ function init_gear_sets()
 	sets.midcast.MeleeCure = {
 		ammo="Hydrocera",
 		head="Gende. Caubeen +1", --18/(-8)
-		body="Theo. Briault +1",
+		body="Theo. B1iaut +1",
 		hands="Theophany Mitts +1", --(+4)/(-7)
 		legs="Ebers Pantaloons",
 		-- feet="Piety Duckbills +1", --10/(-5)
@@ -366,7 +366,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast.StatusRemoval = {
-		main="Gada",
+		--main="Gada",
 		--sub="Chanter's Shield",
 		head="Ebers Cap",
 		body="Inyanga Jubbah +1",
@@ -595,7 +595,7 @@ function init_gear_sets()
 		main="Bolelabunga",
 		sub="Sors Shield",
 		head="Inyanga Tiara",
-		body="Theo. Briault +1",
+		body="Theo. Bliaut +1",
 		hands="Inyan. Dastanas +1",
 		legs="Assiduity Pants +1",
 		feet="Inyan. Crackows +1",
