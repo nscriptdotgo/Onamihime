@@ -22,10 +22,10 @@ function user_job_setup()
 	gear.obi_high_nuke_back = gear.nuke_jse_back
 	gear.obi_high_nuke_waist = "Refoccilation Stone"
 	
-	autoindi = 'Haste'
-	autogeo = 'Frailty'
-	autoentrust = 'Fury'
-	autoentrustee = 'Katagiri'
+	autoindi = "Haste"
+	autogeo = "Frailty"
+	autoentrust = "Fury"
+	autoentrustee = "Katagiri"
 	
 	-- Additional local binds
 	send_command('bind ^` gs c cycle ElementalMode')
@@ -288,10 +288,22 @@ function init_gear_sets()
 		feet="Uk'uxkaj Boots"
 	}
 		
-	sets.midcast['Enfeebling Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Befouled Crown",neck="Erra Pendant",ear1="Regal Earring",ear2="Digni. Earring",
-		body=gear.merlinic_nuke_body,hands="Regal Cuffs",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet="Skaoi Boots"}
+	sets.midcast['Enfeebling Magic'].Resistant = {
+		main="Daybreak",sub="Ammurapi Shield",
+		ammo="Pemphredo Tathlum",
+		head="Befouled Crown",
+		neck="Erra Pendant",
+		ear1="Regal Earring",
+		ear2="Digni. Earring",
+		body=gear.merlinic_nuke_body,
+		hands="Regal Cuffs",
+		ring1="Metamor. Ring",
+		ring2="Stikini Ring",
+		back=gear.nuke_jse_back,
+		-- waist="Luminary Sash",
+		legs="Psycloth Lappas",
+		-- feet="Skaoi Boots"
+	}
 		
     sets.midcast.ElementalEnfeeble = set_combine(sets.midcast['Enfeebling Magic'], {head="Amalric Coif +1",ear2="Malignance Earring",waist="Acuity Belt +1"})
     sets.midcast.ElementalEnfeeble.Resistant = set_combine(sets.midcast['Enfeebling Magic'].Resistant, {head="Amalric Coif +1",ear2="Malignance Earring",waist="Acuity Belt +1"})
@@ -453,10 +465,21 @@ function init_gear_sets()
 		feet="Mallquis Clogs +2"
 	}
 
-	sets.defense.MDT = {main="Malignance Pole",sub="Umbra Strap",ammo="Staunch Tathlum +1",
-		head="Azimuth Hood +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Handler's Earring +1",
-		body="Mallquis Saio +2",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Flax Sash",legs="Hagondes Pants +1",feet="Azimuth Gaiters +1"}
+	sets.defense.MDT = { 
+		main="Malignance Pole",
+		-- head="Befouled Crown",
+		range="Dunna",
+		neck="Loricate Torque +1",
+		ear1="Moonshade Earring",
+		-- ear2="Etiolation Earring",
+		body="Mallquis Saio +1",
+		hands="Geo. Mitaines +1",
+		ring1="Gelatinous Ring",
+		ring2="Fortified Ring",
+		back=gear.idle_jse_back,
+		legs="Assid. Pants +1",
+		feet="Mallquis Clogs +2"
+	}
 		
     sets.defense.MEVA = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
         head="Azimuth Hood +1",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
@@ -537,3 +560,21 @@ end
 function select_default_macro_book()
 	set_macro_page(4, 10)
 end
+
+buff_spell_lists = {
+	Auto = {
+		-- {Name='Haste',		Buff='Haste',		SpellID=57,		When='Always'},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	When='Always'},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		When='Always'},
+	},
+
+	Default = {
+		{Name='Haste',		Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Refresh',	Buff='Refresh',		SpellID=109,	Reapply=false},
+		{Name='Aquaveil',	Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',	Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',		Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen',		Buff='Regen',		SpellID=108,	Reapply=false},
+		{Name='Phalanx',	Buff='Phalanx',		SpellID=106,	Reapply=false},
+	},
+}
