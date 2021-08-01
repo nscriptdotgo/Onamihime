@@ -238,7 +238,7 @@ function init_gear_sets()
 		-- range=empty,
 		ammo="Plumrose Sachet",
 		head="Vitiation Chapeau",
-		neck="Sanctity Necklace",
+		neck="Dls. Torque +1",
 		ear1="Influx Earring",
 		ear2="Snotra Earring",
 		-- body="Lethargy Sayon +1",
@@ -258,7 +258,7 @@ function init_gear_sets()
 		range="Kaja Bow",
 		ammo=empty,
 		head="Viti. Chapeau",
-		-- neck="Dls. Torque +2",
+		neck="Dls. Torque +1",
 		-- ear1="Regal Earring",
 		ear2="Snotra Earring",
 		body="Atrophy Tabard +1",
@@ -531,10 +531,21 @@ function init_gear_sets()
 		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
-	sets.engaged.DW = {ammo="Aurgelmir Orb +1",
-		head="Malignance Chapeau",neck="Anu Torque",ear1="Suppanomimi",ear2="Sherida Earring",
-		body="Malignance Tabard",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+	sets.engaged.DW = {
+		ammo="Aurgelmir Orb +1",
+		head="Malignance Chapeau",
+		neck="Anu Torque",
+		ear1="Suppanomimi",
+		ear2="Sherida Earring",
+		body="Malignance Tabard",
+		hands="Malignance Gloves",
+		ring1="Petrov Ring",
+		ring2="Ilabrat Ring",
+		back=gear.stp_jse_back,
+		waist="Windbuffet Belt +1",
+		legs="Carmine Cuisses +1",
+		feet="Malignance Boots"
+	}
 		
 	sets.engaged.DW.Acc = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
