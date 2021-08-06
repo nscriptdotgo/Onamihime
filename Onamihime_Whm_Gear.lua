@@ -78,7 +78,7 @@ function init_gear_sets()
 		ammo="Incantor Stone",
 		main="Queller Rod",
 		sub="Sors Shield",
-		legs="Ebers Pantaloons", --12
+		legs="Ebers Pant. +1", --12
 		ear1="Mendi. Earring", --5
 		ear2="Nourish. Earring +1", --4
 		back=gear.WHM_FC_Cape, --10
@@ -209,8 +209,8 @@ function init_gear_sets()
 		ammo="Hydrocera",
 		head="Vanya Hood", --18/(-8)
 		body="Vanya Robe",
-		hands="Theophany Mitts +1", --(+4)/(-7)
-		legs="Ebers Pantaloons",
+		hands="Theophany Mitts +2", --(+4)/(-7)
+		legs="Ebers Pant. +1",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Cleric's Torque",
 		ring1="Lebeche Ring",
@@ -228,8 +228,8 @@ function init_gear_sets()
 		ammo="Hydrocera",
 		head="Vanya Hood", --18/(-8)
 		body="Ebers Bliaut",
-		hands="Theophany Mitts +1", --(+4)/(-7)
-		legs="Ebers Pantaloons",
+		hands="Theophany Mitts +2", --(+4)/(-7)
+		legs="Ebers Pant. +1",
 		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Cleric's Torque",
@@ -295,9 +295,9 @@ function init_gear_sets()
 	sets.midcast.MeleeCure = {
 		ammo="Hydrocera",
 		head="Gende. Caubeen +1", --18/(-8)
-		body="Theo. B1iaut +1",
-		hands="Theophany Mitts +1", --(+4)/(-7)
-		legs="Ebers Pantaloons",
+		body="Theo. B1iaut +2",
+		hands="Theophany Mitts +2", --(+4)/(-7)
+		legs="Ebers Pant. +1",
 		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Incanter's Torque",
@@ -538,7 +538,7 @@ function init_gear_sets()
 		-- neck="Erra Pendant",
 		-- ear1="Regal Earring",
 		-- ear2="Digni. Earring",
-		body="Theophany Briault +1",
+		body="Theo. Bliaut +2",
 		-- hands="Regal Cuffs",
 		-- ring1="Kishar Ring",
 		-- ring2="Stikini Ring +1",
@@ -556,8 +556,8 @@ function init_gear_sets()
 		neck="Erra Pendant",
 		ear1="Regal Earring",
 		ear2="Digni. Earring",
-		body="Theophany Briault +1",
-		hands="Theophany Mitts +1",
+		body="Theo. Bliaut +2",
+		hands="Theophany Mitts +2",
 		ring1="Metamor. Ring +1",
 		ring2="Stikini Ring +1",
 		back="Aurist's Cape +1",
@@ -595,8 +595,8 @@ function init_gear_sets()
 		main="Bolelabunga",
 		sub="Sors Shield",
 		head="Inyanga Tiara",
-		body="Theo. Bliaut +1",
-		hands="Inyan. Dastanas +1",
+		body="Theo. Bliaut +2",
+		hands="Theophany Mitts +2-",
 		legs="Assiduity Pants +1",
 		feet="Inyan. Crackows +1",
 		neck="Sanctity Necklace",
@@ -690,7 +690,7 @@ function init_gear_sets()
 	sets.HPCure = {main="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Ethereal Earring",
 		body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Kunaji Ring",ring2="Meridian Ring",
-		back="Alaunus's Cape",waist="Eschan Stone",legs="Ebers Pantaloons",feet="Kaykaus Boots"}
+		back="Alaunus's Cape",waist="Eschan Stone",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
 	sets.buff.Doom = set_combine(sets.buff.Doom, {})
 

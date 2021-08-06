@@ -20,7 +20,7 @@ function user_job_setup()
 	gear.obi_high_nuke_back = "Toro Cape"
 	gear.obi_high_nuke_waist = "Refoccilation Stone"
 
-	gear.stp_jse_back = {name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10',}}
+	gear.da_jse_back = {name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 	gear.nuke_jse_back = {name="Sucellos's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
 	gear.wsd_jse_back = {name="Sucellos's Cape",augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
 	gear.enfeeble_jse_back = {name="Sucellos's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Enmity-10','Phys. dmg. taken-10%',}}
@@ -389,7 +389,7 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {
-		main="Bolelabunga",
+		-- main="Bolelabunga",
 		-- sub="Sacro Bulwark",
 		-- range=empty,
 		ammo="Homiliary",
@@ -461,7 +461,7 @@ function init_gear_sets()
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace"}
 	sets.weapons.DualAeolian = {main="Tauret",sub="Daybreak"}
 	sets.weapons.DualProcDaggers = {main="Blurred Knife +1",sub="Atoyac"}
-	sets.weapons.EnspellOnly = {main="Norgish Dagger",sub="Aern Dagger",range="Kaja Bow",ammo="Beetle Arrow"}
+	sets.weapons.EnspellOnly = {main="Ceremonial Dagger",sub="Ceremonial Dagger",range="Kaja Bow",ammo="Beetle Arrow"}
 	sets.weapons.DualClubs = {main="Nehushtan",sub="Nehushtan"}
 	sets.weapons.DualBlackHalo = {main="Kaja Rod",sub="Thibron"}
 	sets.weapons.DualAlmace = {main="Almace",sub="Sequence"}
@@ -482,39 +482,50 @@ function init_gear_sets()
 --	sets.engaged = {ammo="Aurgelmir Orb +1",
 --		head="Aya. Zucchetto +2",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Brutal Earring",
 --		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Petrov Ring",ring2="Ilabrat Ring",
---		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
+--		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged = {
-		main="Eletta Sword",
+		-- main="Eletta Sword",
 		-- ammo="Aurgelmir Orb +1",
-		-- head="Malignance Chapeau",
+		head="Malignance Chapeau",
 		-- neck="Asperity Necklace",
-		-- ear1="Brutal Earring",
-		-- ear2="Sherida Earring",
+		ear1="Brutal Earring",
+		ear2="Sherida Earring",
 		body="Ayanmo Corazza +1",
-		hands="Ayanmo Manopolas +1",
+		hands="Aya. Manopolas +1",
 		-- ring1="Petrov Ring",
 		-- ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,
+		back=gear.da_jse_back,
 		waist="Kentarch Belt",
 		legs="Ayanmo Cosciales +1",
 		feet="Ayanmo Gambieras +1"
 	}
 		
 	sets.engaged.EnspellOnly = {
-		head="Malignance Chapeau",neck="Dls. Torque +2",ear1="Suppanomimi",ear2="Digni. Earring",
-		body="Ayanmo Corazza +2",hands="Aya. Manopolas +2",ring1="Metamor. Ring +1",ring2="Ramuh Ring +1",
-		back="Ghostfyre Cape",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		ammo="Coiste Bodhar",
+		head="Malignance Chapeau",
+		neck="Anu Torque",
+		ear1="Suppanomimi",
+		ear2="Sherida Earring",
+		body="Ayanmo Corazza +1",
+		hands="Aya. Manopolas +1",
+		ring1="Ayanmo Ring",
+		ring2="Petrov Ring",
+		back="Ghostfyre Cape",
+		waist="Kentarch Belt",
+		legs="Carmine Cuisses +1",
+		-- feet="Malignance Boots"
+	}
 
 	sets.engaged.Acc = {
 		head="Malignance Chapeau",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Sherida Earring",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}	
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}	
 		
 	sets.engaged.FullAcc = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Asperity Necklace",ear1="Cessance Earring",ear2="Sherida Earring",
 		body="Ayanmo Corazza +2",hands="Malignance Gloves",ring1="Petrov Ring",ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}
+		back=gear.da_jse_back,waist="Windbuffet Belt +1",legs="Malignance Tights",feet="Carmine Greaves +1"}
 
 	sets.engaged.DT = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
@@ -538,10 +549,10 @@ function init_gear_sets()
 		ear1="Suppanomimi",
 		ear2="Sherida Earring",
 		body="Malignance Tabard",
-		hands="Malignance Gloves",
+		hands="Aya. Manopolas +1",
 		ring1="Petrov Ring",
 		ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,
+		back=gear.da_jse_back,
 		waist="Windbuffet Belt +1",
 		legs="Carmine Cuisses +1",
 		feet="Malignance Boots"
@@ -550,12 +561,12 @@ function init_gear_sets()
 	sets.engaged.DW.Acc = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.DW.FullAcc = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
 		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back=gear.stp_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
+		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.DW.DT = {ammo="Aurgelmir Orb +1",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
