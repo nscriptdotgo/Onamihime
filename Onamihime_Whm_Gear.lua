@@ -46,8 +46,8 @@ function init_gear_sets()
 	sets.weapons.MeleeWeapons = {main="Izcalli",sub="Ammurapi Shield"}
 	sets.weapons.DualWeapons = {main="Izcalli",sub="Nehushtan"}
 
-	sets.buff.Sublimation = {waist="Embla Sash"}
-	sets.buff.DTSublimation = {waist="Embla Sash"}
+	sets.buff.Sublimation = {}
+	sets.buff.DTSublimation = {}
 
 	-- Precast Sets
 
@@ -596,7 +596,7 @@ function init_gear_sets()
 		sub="Sors Shield",
 		head="Inyanga Tiara",
 		body="Theo. Bliaut +2",
-		hands="Theophany Mitts +2-",
+		hands="Theophany Mitts +2",
 		legs="Assiduity Pants +1",
 		feet="Inyan. Crackows +1",
 		neck="Sanctity Necklace",

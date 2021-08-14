@@ -389,7 +389,7 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {
-		-- main="Bolelabunga",
+		main="Bolelabunga",
 		-- sub="Sacro Bulwark",
 		-- range=empty,
 		ammo="Homiliary",
@@ -514,7 +514,7 @@ function init_gear_sets()
 		back="Ghostfyre Cape",
 		waist="Kentarch Belt",
 		legs="Carmine Cuisses +1",
-		-- feet="Malignance Boots"
+		feet="Aya. Gambieras +1"
 	}
 
 	sets.engaged.Acc = {
@@ -684,3 +684,18 @@ function user_job_lockstyle()
 		windower.chat.input('/lockstyleset 032')
 	end
 end
+buff_spell_lists = {
+	Odin = {
+		{Name='Refresh II',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
+		{Name='Gain-INT',		Buff='INT Boost',		SpellID=490,	Reapply=false},
+		{Name='Temper',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
+		{Name='Regen II',		Buff='Regen',			SpellID=110,	Reapply=false},
+		{Name='Enaero',			Buff='Enaero',			SpellID=102,	Reapply=false},
+		-- {Name='Enthunder',		Buff='Enthunder',		SpellID=104,	Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',		SpellID=54,		Reapply=false},
+		{Name='Shell V',		Buff='Shell',			SpellID=52,		Reapply=false},
+		{Name='Protect V',		Buff='Protect',			SpellID=47,		Reapply=false},
+	}
+}
