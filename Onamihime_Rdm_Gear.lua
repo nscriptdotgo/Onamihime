@@ -166,34 +166,33 @@ function init_gear_sets()
 	}
 
     sets.midcast.Cure = {
-		main="Queller Rod",		
+		main="Bolelabunga",		
 		sub="Sors Shield",
-		-- range=empty,
-		ammo="Hasty Pinion +1",
-		head="Vanya Hood", --18/(-8)
-		-- neck="Incanter's Torque",
-		-- ear1="Meili Earring",
-		ear2="Mendi. Earring",
-        body="Viti. Tabard",
+		ammo="Hydrocera",
+		head={ name="Vanya Hood", augments={'Healing magic skill +20','"Cure" spellcasting time -7%','Magic dmg. taken -3',}},
+		body={ name="Viti. Tabard +1", augments={'Enhances "Chainspell" effect',}},
 		hands="Kaykaus Cuffs",
-		ring1="Lebeche Ring",
-		-- ring2="Menelaus's Ring",
-		back=gear.enfeeble_jse_back,
-		waist="Luminary Sash",
-		legs="Carmine Cuisses +1",
+		legs="Atrophy Tights +1",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
+		neck="Loricate Torque +1",
+		waist="Witful Belt",
+		left_ear="Malignance Earring",
+		right_ear="Mendi. Earring",
+		left_ring="Lebeche Ring",
+		right_ring="Ephedra Ring",
+		back={ name="Sucellos's Cape", augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','Enmity-10','Phys. dmg. taken-10%',}},
 	}
 		
-    sets.midcast.LightWeatherCure = {main="Chatoyant Staff",sub="Curatio Grip",range=empty,ammo="Hasty Pinion +1",
-        head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Meili Earring",ear2="Mendi. Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
-        back="Twilight Cape",waist="Hachirin-no-Obi",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
+    sets.midcast.LightWeatherCure = {main="Iridal Staff",sub="Enki Strap",range=empty,ammo="Hydrocera",
+        head="Vanya Hood",neck="Loricate Torque +1",ear1="Malignance Earring",ear2="Mendi. Earring",
+        body="Viti. Tabard +1",hands="Kaykaus Cuffs",ring1="Lebeche Ring",ring2="Ephedra Ring",
+        back=gear.enfeeble_jse_back,waist="Witful Belt",legs="Atrophy Tights +1",feet="Vanya Clogs"}
 		
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Daybreak",sub="Sors Shield",range=empty,ammo="Hasty Pinion +1",
         head="Gende. Caubeen +1",neck="Incanter's Torque",ear1="Meili Earring",ear2="Mendi. Earring",
         body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Janniston Ring",ring2="Menelaus's Ring",
-        back="Twilight Cape",waist="Hachirin-no-Obi",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
+        back=gear.enfeeble_jse_back,waist="Hachirin-no-Obi",legs="Carmine Cuisses +1",feet="Kaykaus Boots"}
 		
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
 		back="Oretan. Cape +1",ring1="Haoma's Ring",ring2="Menelaus's Ring",waist="Witful Belt",feet="Vanya Clogs"})
