@@ -138,7 +138,11 @@ function init_gear_sets()
 
 	-- Midcast Sets
 
-	sets.TreasureHunter = set_combine(sets.TreasureHunter, {feet=gear.chironic_treasure_feet})
+	sets.TreasureHunter = set_combine(sets.TreasureHunter, {
+		feet=gear.merlinic_treasure_feet,
+		waist="Chaac Belt"
+		-- feet=gear.chironic_treasure_feet
+	})
 	
 	-- Gear that converts elemental damage done to recover MP.	
 	sets.RecoverMP = {body="Seidr Cotehardie"}
