@@ -455,7 +455,7 @@ function init_gear_sets()
 	-- Weapons sets
 	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
 	sets.weapons.Naegling = {
-		main="Excalipoor",
+		main="Eletta Sword",
 		-- sub="Ammurapi Shield"
 	}
 	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
@@ -689,11 +689,11 @@ function user_job_lockstyle()
 end
 buff_spell_lists = {
 	Odin = {
-		{Name='Refresh II',	Buff='Refresh',			SpellID=894,	Reapply=false},
+		{Name='Refresh III',	Buff='Refresh',			SpellID=894,	Reapply=false},
 		{Name='Haste II',		Buff='Haste',			SpellID=511,	Reapply=false},
 		{Name='Phalanx',		Buff='Phalanx',			SpellID=106,	Reapply=false},
 		{Name='Gain-INT',		Buff='INT Boost',		SpellID=490,	Reapply=false},
-		{Name='Temper',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
+		{Name='Temper II',		Buff='Multi Strikes',	SpellID=895,	Reapply=false},
 		{Name='Regen II',		Buff='Regen',			SpellID=110,	Reapply=false},
 		{Name='Enaero',			Buff='Enaero',			SpellID=102,	Reapply=false},
 		-- {Name='Enthunder',		Buff='Enthunder',		SpellID=104,	Reapply=false},

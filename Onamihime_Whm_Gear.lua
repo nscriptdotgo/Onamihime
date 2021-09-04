@@ -227,7 +227,7 @@ function init_gear_sets()
 		--ammo="Esper Stone +1", --0/(-5)
 		ammo="Hydrocera",
 		head="Vanya Hood", --18/(-8)
-		body="Ebers Bliaut",
+		body="Ebers Bliaut +1",
 		hands="Theophany Mitts +2", --(+4)/(-7)
 		legs="Ebers Pant. +1",
 		-- feet="Piety Duckbills +1", --10/(-5)
@@ -313,14 +313,14 @@ function init_gear_sets()
 		waist="Cleric's Belt",
 	}
 
-	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaut"})
+	sets.midcast.MeleeCureSolace = set_combine(sets.midcast.MeleeCure, {body="Ebers Bliaut +1"})
 	sets.midcast.MeleeLightWeatherCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightWeatherCureSolace = set_combine(sets.midcast.MeleeCure, {
-		body="Ebers Bliaut",
+		body="Ebers Bliaut +1",
 		-- waist="Hachirin-no-Obi"
 	})
 	sets.midcast.MeleeLightDayCureSolace = set_combine(sets.midcast.MeleeCure, {
-		body="Ebers Bliaut",
+		body="Ebers Bliaut +1",
 		-- waist="Hachirin-no-Obi"
 	})
 	sets.midcast.MeleeLightDayCure = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
@@ -328,20 +328,20 @@ function init_gear_sets()
 	sets.midcast.MeleeLightWeatherCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 
-	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut"})
+	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1"})
 	sets.midcast.LightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut",waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
+	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.Curaga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.LightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.LightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCure.DT = set_combine(sets.midcast.Cure.DT, {})
 
-	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut"})
+	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1"})
 	sets.midcast.MeleeLightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut",waist="Hachirin-no-Obi"})
-	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
+	sets.midcast.MeleeLightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeLightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
 	sets.midcast.MeleeCuraga.DT = set_combine(sets.midcast.Cure.DT, {})
 	sets.midcast.MeleeLightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
@@ -350,7 +350,7 @@ function init_gear_sets()
 	sets.midcast.Cursna = {
 		main="Gada",
 		-- sub="Chanter's Shield",
-		body="Ebers Bliaut",
+		body="Ebers Bliaut +1",
 		-- hands="Fanatic Gloves", --15
 		legs="Theo. Pant. +1", --17
 		feet="Vanya Clogs", --5
@@ -368,7 +368,7 @@ function init_gear_sets()
 	sets.midcast.StatusRemoval = {
 		--main="Gada",
 		--sub="Chanter's Shield",
-		head="Ebers Cap",
+		head="Ebers Cap +1",
 		body="Inyanga Jubbah +2",
 		-- hands="Fanatic Gloves",
 		legs="Aya. Cosciales +2",
@@ -408,7 +408,7 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 
-	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills"})
+	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet=" +1"})
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
 		main="Vadose Rod",
@@ -422,7 +422,7 @@ function init_gear_sets()
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {
 		main="Bolelabunga",
 		head="Inyanga Tiara",
-		hands="Ebers Mitts",
+		hands=" +1",
 		legs="Theo. Pant. +1"
 	})
 
@@ -456,18 +456,18 @@ function init_gear_sets()
 		main="Gada",
 		sub="Ammurapi Shield",
 		ammo="Hasty Pinion +1",
-		head="Ebers Cap",
+		head=" +1",
 		-- neck="Incanter's Torque",
 		ear1="Mimir Earring",
 		ear2="Andoaa Earring",
-		body="Ebers Bliaut",
-		hands="Ebers Mitts",
+		body="Ebers Bliaut +1",
+		hands=" +1",
 		ring1="Stikini Ring",
 		-- ring2="Stikini Ring +1",
 		back="Alaunus's Cape",
 		waist="Olympus Sash",
 		legs="Piety Pantaloons",
-		feet="Ebers Duckbills"
+		feet="Ebers Duckbills +1"
 	}
 
 	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
@@ -611,7 +611,7 @@ function init_gear_sets()
 
 	sets.idle.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
 		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Gelatinous Ring",
 		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
 	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
@@ -681,7 +681,7 @@ function init_gear_sets()
 		back="Kayapa Cape",waist="Shetal Stone",legs="Aya. Cosciales +2",feet="Aya. Gambieras +2"}
 
 	-- Buff sets: Gear that needs to be worn to actively enhance a current player buff.
-	sets.buff['Divine Caress'] = {hands="Ebers Mitts",back="Mending Cape"}
+	sets.buff['Divine Caress'] = {hands="Ebers Mitts +1",back="Mending Cape"}
 
 	sets.HPDown = {head="Pixie Hairpin +1",ear1="Mendicant's Earring",ear2="Evans Earring",
 		body="Zendik Robe",hands="Hieros Mittens",ring1="Mephitas's Ring +1",ring2="Mephitas's Ring",
