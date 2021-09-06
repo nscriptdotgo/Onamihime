@@ -14,7 +14,7 @@ function user_job_setup()
 	gear.obi_nuke_waist = "Sekhmet Corset"
 	gear.obi_high_nuke_waist = "Yamabuki-no-Obi"
 	gear.obi_nuke_back = "Toro Cape"
-	gear.WHM_FC_Cape = { name="Alaunus's Cape", augments={'HP+30','Eva.+10 /Mag. Eva.+10','"Fast Cast"+10',}},
+	gear.fc_jse_cape = { name="Alaunus's Cape", augments={'HP+30','Eva.+10 /Mag. Eva.+10','"Fast Cast"+10',}},
   
 		  -- Additional local binds
 	send_command('bind ^` input /ma "Arise" <t>')
@@ -56,7 +56,7 @@ function init_gear_sets()
 		main="Grioavolr", --5
 		sub="Clerisy Strap", --8
 		ammo="Incantor Stone", --2
-		head="Nahtirah Hat",
+		head="Bunzi's Hat",
 		body="Inyanga Jubbah +2", --14
 		hands="Gende. Gages +1", --7
 		legs="Aya. Cosciales +2", --6
@@ -66,7 +66,7 @@ function init_gear_sets()
 		ear2="Malignance Earring", --1
 		ring1="Lebeche Ring", --4
 		ring2="Weather. Ring", --6(4)
-		back=gear.WHM_FC_Cape,
+		back=gear.fc_jse_cape,
 		waist="Embla Sash", --5
 	}
 
@@ -81,7 +81,7 @@ function init_gear_sets()
 		legs="Ebers Pant. +1", --12
 		ear1="Mendi. Earring", --5
 		ear2="Nourish. Earring +1", --4
-		back=gear.WHM_FC_Cape, --10
+		back=gear.fc_jse_cape, --10
 	})
 
 	sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
@@ -167,7 +167,7 @@ function init_gear_sets()
 		--sub="Thuellaic Ecu +1",
 		head="Vanya Hood",
 		--body="Vedic Coat",
-		hands=gear.telchine_enh_hands,
+		hands="Shrieker's Cuffs",
 		legs="Vanya Slops",
 		--feet="Kaykaus Boots +1",
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
@@ -185,7 +185,7 @@ function init_gear_sets()
 		main=gear.grioavolr_fc_staff,
 		sub="Clerisy Strap",
 		ammo="Hasty Pinion +1",
-		head="Nahtirah Hat",
+		head="Bunzi's Hat",
 		neck="Voltsurge Torque",
 		-- ear1="Enchntr. Earring +1",
 		ear2="Malignance Earring",
@@ -217,30 +217,26 @@ function init_gear_sets()
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
 		ear1="Mendi, Earring", -- (+2)/(-5)
 		ear2="Glorious Earring",
-		back=gear.WHM_FC_Cape,
+		back=gear.fc_jse_cape,
 		waist="Cleric's Belt",
 	}
 
 	sets.midcast.CureSolace = {
 		main="Queller Rod", --15(+2)/(-15)
 		sub="Sors Shield", --3/(-5)
-		--ammo="Esper Stone +1", --0/(-5)
 		ammo="Hydrocera",
 		head="Vanya Hood", --18/(-8)
 		body="Ebers Bliaut +1",
 		hands="Theophany Mitts +2", --(+4)/(-7)
 		legs="Ebers Pant. +1",
-		-- feet="Piety Duckbills +1", --10/(-5)
 		feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
 		neck="Cleric's Torque",
 		ear1="Mendicant's Earring", -- (+2)/(-5)
 		ear2="Glorious Earring",
-		--ear2="Meili Earring",
 		ring1="Lebeche Ring", --3/(-5)
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		back=gear.WHM_FC_Cape,
-		--waist="Bishop's Sash",
-		waist="Cleric's Belt",
+		back=gear.fc_jse_cape,
+		waist="Cleric's Belt"
 	}
 
 	sets.midcast.LightWeatherCure = set_combine(sets.midcast.w, {
@@ -287,9 +283,9 @@ function init_gear_sets()
 	})
 
 	sets.midcast.Cure.DT = {main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Glorious Earring",
-		body="Ayanmo Corazza +2",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Gende. Galosh. +1"}
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Glorious Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Lebeche Ring",ring2="Dark Ring",
+		back="Alaunus's Cape",waist="Luminary Sash",legs="Ebers Pant. +1",feet="Bunzi's Sabots"}
 
 	--Melee Curesets are used whenever your Weapons state is set to anything but None.
 	sets.midcast.MeleeCure = {
@@ -359,7 +355,7 @@ function init_gear_sets()
 		-- ear2="Meili Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		back=gear.WHM_FC_Cape, --25
+		back=gear.fc_jse_cape, --25
 		back="Alaunus's Cape",
 		--waist="Bishop's Sash",
 		waist="Cleric's Belt",
@@ -378,7 +374,7 @@ function init_gear_sets()
 		-- ear2="Etiolation Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		back=gear.WHM_FC_Cape,
+		back=gear.fc_jse_cape,
 		back="Alaunus's Cape",
 		waist="Embla Sash",
 	}
@@ -535,17 +531,17 @@ function init_gear_sets()
 		-- sub="Ammurapi Shield",
 		-- ammo="Pemphredo Tathlum",
 		-- head="Befouled Crown",
-		-- neck="Erra Pendant",
+		neck="Erra Pendant",
 		-- ear1="Regal Earring",
 		-- ear2="Digni. Earring",
 		body="Theo. Bliaut +2",
 		-- hands="Regal Cuffs",
 		-- ring1="Kishar Ring",
-		-- ring2="Stikini Ring +1",
+		ring2="Stikini Ring",
 		-- back="Aurist's Cape +1",
 		-- waist="Luminary Sash",
-		-- legs="Chironic Hose",
-		-- feet="Uk'uxkaj Boots"
+		legs="Chironic Hose",
+		feet="Uk'uxkaj Boots"
 	}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {
@@ -600,46 +596,45 @@ function init_gear_sets()
 		legs="Assiduity Pants +1",
 		feet="Inyan. Crackows +1",
 		neck="Sanctity Necklace",
-		ear1="Mendicant's Earring",
+		ear1="Mendi. Earring",
 		ear2="Moonshade Earring",
 		ring1="Gelatinous Ring",
 		ring2="Inyanga Ring",
-		back=gear.WHM_FC_Cape,
-		back="Alaunus's Cape",
+		back="Solemnity Cape",
 		waist="Fucho-no-Obi",
 	}
 
-	sets.idle.PDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Gelatinous Ring",
-		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+	sets.idle.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
 	sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
-		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Witching Robe",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
-		back="Umbra Cape",waist="Embla Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Witching Robe",hands=gear.chironic_refresh_hands,ring1="Inyanga Ring",ring2="Dark Ring",
+		back="Solemnity Cape",waist="Embla Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
 	-- Defense sets
 
-	sets.defense.PDT = {main="Bolelabunga",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Ethereal Earring",
-		body="Vrikodara Jupon",hands="Gende. Gages +1",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flax Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
+	sets.defense.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
+		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.defense.MDT = {main="Mafic Cudgel",sub="Genmei Shield",ammo="Staunch Tathlum +1",
-		head="Gende. Caubeen +1",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Inyanga Jubbah +2",hands=gear.chironic_refresh_hands,ring1="Defending Ring",ring2="Shadow Ring",
-		back="Moonlight Cape",waist="Flax Sash",legs="Th. Pant. +3",feet="Gende. Galosh. +1"}
+	sets.defense.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.defense.MEVA = {ammo="Staunch Tathlum +1",
-		head=gear.telchine_enh_head,neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Inyanga Jubbah +2",hands="Telchine Gloves",ring1="Vengeful Ring",Ring2="Purity Ring",
-		back="Aurist's Cape +1",waist="Luminary Sash",legs="Telchine Braconi",feet="Telchine Pigaches"}
+	sets.defense.MEVA = {ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm",ear1="Etiolation Earring",ear2="Sanare Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Purity Ring",
+		back="Solemnity Cape",waist="Luminary Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
 		-- Engaged sets
 
@@ -688,7 +683,7 @@ function init_gear_sets()
 		back="Swith Cape +1",waist="Flax Sash",legs="Shedir Seraweels",feet=""}
 
 	sets.HPCure = {main="Queller Rod",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Ethereal Earring",
+		head="Blistering Sallet +1",neck="Nodens Gorget",ear1="Etiolation Earring",ear2="Moonshade Earring",
 		body="Kaykaus Bliaut",hands="Kaykaus Cuffs",ring1="Kunaji Ring",ring2="Meridian Ring",
 		back="Alaunus's Cape",waist="Eschan Stone",legs="Ebers Pant. +1",feet="Kaykaus Boots"}
 
