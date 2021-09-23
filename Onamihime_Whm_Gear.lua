@@ -423,25 +423,25 @@ function init_gear_sets()
 	})
 
 	sets.midcast.Protect = set_combine(sets.midcast['Enhancing Magic'], {
-		-- ring2="Sheltered Ring",
+		ring2="Sheltered Ring",
 		feet="Theo. Duckbills +1",
 		-- ear1="Gifted Earring",
 		-- waist="Sekhmet Corset"
 	})
 	sets.midcast.Protectra = set_combine(sets.midcast['Enhancing Magic'], {
-		-- ring2="Sheltered Ring",
+		ring2="Sheltered Ring",
 		feet="Theo. Duckbills +1",
 		-- ear1="Gifted Earring",
 		-- waist="Sekhmet Corset"
 	})
 	sets.midcast.Shell = set_combine(sets.midcast['Enhancing Magic'], {
-		-- ring2="Sheltered Ring",
+		ring2="Sheltered Ring",
 		legs="Piety Pantaln.",
 		-- ear1="Gifted Earring",
 		-- waist="Sekhmet Corset"
 	})
 	sets.midcast.Shellra = set_combine(sets.midcast['Enhancing Magic'], {
-		-- ring2="Sheltered Ring",
+		ring2="Sheltered Ring",
 		legs="Piety Pantaln.",
 		-- ear1="Gifted Earring",
 		-- waist="Sekhmet Corset"
@@ -605,9 +605,9 @@ function init_gear_sets()
 	}
 
 	sets.idle.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
-		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
-		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
-		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
 		head="Bunzi's Hat",neck="Warder's Charm",ear1="Etiolation Earring",ear2="Moonshade Earring",
@@ -622,9 +622,9 @@ function init_gear_sets()
 	-- Defense sets
 
 	sets.defense.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
-		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
-		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
-		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring",
+		back="Solemnity Cape",waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
 		head="Bunzi's Hat",neck="Warder's Charm",ear1="Etiolation Earring",ear2="Moonshade Earring",
@@ -739,3 +739,49 @@ function user_job_lockstyle()
 		windower.chat.input('/lockstyleset 1')
 	end
 end
+
+buff_spell_lists = {
+	Auto = {--Options for When are: Always, Engaged, Idle, OutOfCombat, Combat
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	When='Always'},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		When='Always'},
+		{Name='Aurorastorm',	Buff='Aurorastorm',	SpellID=119,	When='Always'},
+		{Name='Refresh',		Buff='Refresh',		SpellID=109,	When='Always'},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		When='Always'},
+	},
+	Default = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Regen IV',		Buff='Regen',		SpellID=477,	Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',		SpellID=106,	Reapply=false},
+		{Name='Boost-STR',		Buff='STR Boost',	SpellID=479,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Barthundra',		Buff='Barthunder',	SpellID=70,		Reapply=false},
+		{Name='Baramnesra',		Buff='Baramnesia',	SpellID=85,		Reapply=false},
+		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
+	},
+	Melee = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Boost-STR',		Buff='STR Boost',	SpellID=479,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=false},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
+		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
+	},
+	Lilith = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Regen IV',		Buff='Regen',		SpellID=477,	Reapply=false},
+		{Name='Boost-STR',		Buff='STR Boost',	SpellID=479,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=true},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=true},
+		{Name='Barfira',		Buff='Barfire',		SpellID=66,		Reapply=true},
+		{Name='Baramnesra',		Buff='Baramnesia',	SpellID=85,		Reapply=true},
+		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
+	},
+}
