@@ -347,7 +347,7 @@ function init_gear_sets()
 		main="Gada",
 		-- sub="Chanter's Shield",
 		body="Ebers Bliaut +1",
-		-- hands="Fanatic Gloves", --15
+		hands="Inyan. Dastanas +2", --15
 		legs="Theo. Pant. +1", --17
 		feet="Vanya Clogs", --5
 		neck="Malison Medallion", --10
@@ -362,7 +362,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast.StatusRemoval = {
-		--main="Gada",
+		main="Gada",
 		--sub="Chanter's Shield",
 		head="Ebers Cap +1",
 		body="Inyanga Jubbah +2",
@@ -386,7 +386,7 @@ function init_gear_sets()
 	-- 110 total Enhancing Magic Skill; caps even without Light Arts
 	sets.midcast['Enhancing Magic'] = {
 		main="Gada",
-		--sub="Ammurapi Shield",
+		sub="Ammurapi Shield",
 		sub="Sors Shield",
 		head=gear.telchine_enh_head,
 		body=gear.telchine_enh_body,
@@ -404,11 +404,11 @@ function init_gear_sets()
 
 	sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {neck="Nodens Gorget",ear2="Earthcry Earring",waist="Siegel Sash",legs="Shedir Seraweels"})
 
-	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet=" +1"})
+	sets.midcast.Auspice = set_combine(sets.midcast['Enhancing Magic'], {feet="Ebers Duckbills +1"})
 
 	sets.midcast.Aquaveil = set_combine(sets.midcast['Enhancing Magic'], {
 		main="Vadose Rod",
-		-- sub="Ammurapi Shield",
+		sub="Ammurapi Shield",
 		-- hands="Regal Cuffs",
 		-- waist="Emphatikos Rope",
 		-- legs="Shedir Seraweels"
@@ -417,8 +417,8 @@ function init_gear_sets()
 
 	sets.midcast.Regen = set_combine(sets.midcast['Enhancing Magic'], {
 		main="Bolelabunga",
-		head="Inyanga Tiara",
-		hands=" +1",
+		head="Inyanga Tiara +2",
+		hands="Ebers Mitts +1",
 		legs="Theo. Pant. +1"
 	})
 
@@ -448,16 +448,15 @@ function init_gear_sets()
 	})
 
 	sets.midcast.BarElement = {
-		-- main="Beneficus",
-		main="Gada",
+		main="Beneficus",
 		sub="Ammurapi Shield",
 		ammo="Hasty Pinion +1",
-		head=" +1",
+		head="Ebers Cap +1",
 		-- neck="Incanter's Torque",
 		ear1="Mimir Earring",
 		ear2="Andoaa Earring",
 		body="Ebers Bliaut +1",
-		hands=" +1",
+		hands="Ebers Mitts +1",
 		ring1="Stikini Ring",
 		-- ring2="Stikini Ring +1",
 		back="Alaunus's Cape",
@@ -528,7 +527,7 @@ function init_gear_sets()
 
 	sets.midcast['Enfeebling Magic'] = {
 		-- main="Daybreak",
-		-- sub="Ammurapi Shield",
+		sub="Ammurapi Shield",
 		-- ammo="Pemphredo Tathlum",
 		-- head="Befouled Crown",
 		neck="Erra Pendant",
@@ -590,9 +589,9 @@ function init_gear_sets()
 		ammo="Homiliary",
 		main="Bolelabunga",
 		sub="Sors Shield",
-		head="Inyanga Tiara +1",
+		head="Inyanga Tiara +2",
 		body="Theo. Bliaut +2",
-		hands="Theophany Mitts +2",
+		hands="Inyan. Dastanas +2",
 		legs="Assiduity Pants +1",
 		feet="Inyan. Crackows +1",
 		neck="Sanctity Necklace",
