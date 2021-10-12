@@ -588,7 +588,7 @@ function init_gear_sets()
 	sets.idle = {
 		ammo="Homiliary",
 		main="Bolelabunga",
-		sub="Sors Shield",
+		sub="Genbu's Shield",
 		head="Inyanga Tiara +2",
 		body="Theo. Bliaut +2",
 		hands="Inyan. Dastanas +2",
@@ -603,7 +603,7 @@ function init_gear_sets()
 		waist="Fucho-no-Obi",
 	}
 
-	sets.idle.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
+	sets.idle.PDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring",
 		back="Solemnity Cape",waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
@@ -613,14 +613,14 @@ function init_gear_sets()
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring",
 		back="Solemnity Cape",waist="Flax Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.idle.Weak = {main="Bolelabunga",sub="Genmei Shield",ammo="Homiliary",
+	sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Befouled Crown",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
 		body="Witching Robe",hands=gear.chironic_refresh_hands,ring1="Inyanga Ring",ring2="Dark Ring",
 		back="Solemnity Cape",waist="Embla Sash",legs="Assid. Pants +1",feet=gear.chironic_refresh_feet}
 
 	-- Defense sets
 
-	sets.defense.PDT = {main="Bolelabunga",sub="Sors Shield",ammo="Homiliary",
+	sets.defense.PDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Moonshade Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring",
 		back="Solemnity Cape",waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
