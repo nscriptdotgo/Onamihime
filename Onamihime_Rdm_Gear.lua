@@ -393,21 +393,20 @@ function init_gear_sets()
 	-- Idle sets
 	sets.idle = {
 		main="Bolelabunga",
-		-- sub="Sacro Bulwark",
-		-- range=empty,
+		sub="Genbu's Shield",
 		ammo="Homiliary",
-		head="Vitiation Chapeau",
+		head="Viti. Chapeau +1",
 		neck="Loricate Torque +1",
 		ear1="Moonshade Earring",
 		-- ear2="Ethereal Earring",
 		body="Jhakri Robe +2",
-		hands=gear.merlinic_refresh_hands,
+		hands="Nyame Gauntlets",
 		ring1="Stikini Ring",
 		ring2="Gelatinous Ring",
 		-- back="Umbra Cape",
 		-- waist="Flume Belt +1",
-		-- legs="Lengo Pants",
-		feet=gear.merlinic_refresh_feet
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets"
 	}
 		
 	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",range=empty,ammo="Staunch Tathlum +1",
@@ -507,7 +506,7 @@ function init_gear_sets()
 	sets.engaged.EnspellOnly = {
 		ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
-		neck="Anu Torque",
+		neck="Sanctity Necklace",
 		ear1="Suppanomimi",
 		ear2="Sherida Earring",
 		body="Ayanmo Corazza +2",
@@ -515,9 +514,9 @@ function init_gear_sets()
 		ring1="Ayanmo Ring",
 		ring2="Petrov Ring",
 		back="Ghostfyre Cape",
-		waist="Kentarch Belt",
+		waist="Kentarch Belt +1",
 		legs="Carmine Cuisses +1",
-		feet="Aya. Gambieras +1"
+		feet="Nyame Sollerets"
 	}
 
 	sets.engaged.Acc = {
