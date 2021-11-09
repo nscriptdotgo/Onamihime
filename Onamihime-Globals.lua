@@ -75,7 +75,12 @@ send_command('bind ^y gs c toggle AutoCleanupMode') --Uses certain items and tri
 send_command('bind ^t gs c cycle treasuremode') --Toggles hitting htings with your treasure hunter set.
 send_command('bind !t input /target <bt>') --Targets the battle target.
 send_command('bind ^o fillmode') --Lets you see through walls.
-send_command('bind @m gs c mount Omega')
+send_command('bind @m gs c mount Raptor')
+
+send_command('bind ^f exec follow')
+send_command('bind !f exec unfollow')
+send_command('bind @, exec speed')
+send_command('bind @w send @all /warp')
 
 NotifyBuffs = S{'doom','petrification'}
 
