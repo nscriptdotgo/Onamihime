@@ -2,7 +2,7 @@
 function user_job_setup()
 	state.OffenseMode:options('Normal','Acc')
 	state.CastingMode:options('Normal','Resistant')
-	state.IdleMode:options('PDT','Normal')
+	state.IdleMode:options('Normal','PDT')
 	state.AutoBuffMode:options('Off','Auto','AutoDyna')
 	state.PhysicalDefenseMode:options('PDT')
 	state.MagicalDefenseMode:options('MDT')
@@ -214,7 +214,7 @@ function init_gear_sets()
 		feet="Kaykaus Boots +1",
 		neck="Cleric's Torque",
 		ring1="Lebeche Ring",
-		ring2={name="Ephedra Ring", bag="wardrobe2"},
+		ring2="Tamas Ring",
 		ear1="Nourish. Earring +1", -- (+2)/(-5)
 		ear2="Glorious Earring",
 		back=gear.mnd_jse_back,
@@ -234,14 +234,14 @@ function init_gear_sets()
 		ear1="Nourish. Earring +1", -- (+2)/(-5)
 		ear2="Glorious Earring",
 		ring1="Lebeche Ring", --3/(-5)
-		ring2={name="Ephedra Ring", bag="wardrobe2"},
+		ring2="Tamas Ring",
 		back=gear.mnd_jse_back,
 		waist="Sacro Cord"
 	}
 
-	sets.midcast.LightWeatherCure = set_combine(sets.midcast.Cure, {main="Iridal Staff",sub="Enki Strap",head="Ebers Cap +1",back="Twilight Cape",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCure = set_combine(sets.midcast.Cure, {main="Iridal Staff",sub="Enki Strap",back="Twilight Cape",waist="Hachirin-no-Obi"})
 
-	sets.midcast.LightWeatherCureSolace = set_combine(sets.midcast.CureSolace, {main="Iridal Staff",sub="Enki Strap",head="Ebers Cap +1",back="Twilight Cape",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCureSolace = set_combine(sets.midcast.CureSolace, {main="Iridal Staff",sub="Enki Strap",back="Twilight Cape",waist="Hachirin-no-Obi"})
 
 	sets.midcast.LightDayCureSolace = set_combine(sets.midcast.CureSolace, {back="Twilight Cape",waist="Hachirin-no-Obi"})
 
@@ -249,13 +249,13 @@ function init_gear_sets()
 
 	sets.midcast.Curaga = set_combine(sets.midcast.Cure, {})
 
-	sets.midcast.LightWeatherCuraga = set_combine(sets.midcast.Cure, {main="Iridal Staff",sub="Enki Strap",head="Ebers Cap +1",back="Twilight Cape",waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCuraga = set_combine(sets.midcast.Cure, {main="Iridal Staff",sub="Enki Strap",back="Twilight Cape",waist="Hachirin-no-Obi"})
 
 	sets.midcast.LightDayCuraga = set_combine(sets.midcast.Cure, {back="Twilight Cape",waist="Hachirin-no-Obi"})
 
-	sets.midcast.Cure.DT = {main="Queller Rod",sub="Genmei Shield",ammo="Staunch Tathlum +1",
+	sets.midcast.Cure.DT = {main="Daybreak",sub="Genbu's Shield",ammo="Pemphredo Tathlum",
 		head="Bunzi's Hat",neck="Loricate Torque +1",ear1="Nourish. Earring +1",ear2="Glorious Earring",
-		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Lebeche Ring",ring2="Dark Ring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Lebeche Ring",ring2="Gelatinous Ring +1",
 		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Ebers Pant. +1",feet="Bunzi's Sabots"}
 
 	--Melee Curesets are used whenever your Weapons state is set to anything but None.
@@ -420,7 +420,7 @@ function init_gear_sets()
 		feet="Ebers Duckbills +1"
 	}
 
-	sets.midcast.Impact = {main="Gada",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
+	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
@@ -481,7 +481,7 @@ function init_gear_sets()
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 
 	sets.midcast['Enfeebling Magic'] = {
-		main="Gada",
+		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +2",
@@ -499,7 +499,7 @@ function init_gear_sets()
 	}
 
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		main="Gada",
+		main="Daybreak",
 		sub="Ammurapi Shield",
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +2",
@@ -542,7 +542,7 @@ function init_gear_sets()
 	-- Idle sets (default idle set not needed since the other three are defined, but leaving for testing purposes)
 	sets.idle = {
 		ammo="Homiliary",
-		main="Bolelabunga",
+		main="Daybreak",
 		sub="Genbu's Shield",
 		head="Inyanga Tiara +2",
 		body="Theo. Bliaut +3",
@@ -554,41 +554,41 @@ function init_gear_sets()
 		ear2="Eabani Earring",
 		ring1="Inyanga Ring",
 		ring2="Gelatinous Ring +1",
-		back=gear.fc_jse_cape,
+		back=gear.mnd_jse_back,
 		waist="Carrier's Sash",
 	}
 
-	sets.idle.PDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+	sets.idle.PDT = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Moonshade Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring +1",
-		back=gear.fc_jse_cape,waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.idle.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
+	sets.idle.MDT = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Moonshade Earring",ear2="Etiolation Earring",
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring +1",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+	sets.idle.Weak = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Inyanga Tiara +2",neck="Loricate Torque +1",ear1="Moonshade Earring",ear2="Eabani Earring",
 		body="Theo. Bliaut +3",hands="Inyan. Dastanas +2",ring1="Inyanga Ring",ring2="Gelatinous Ring +1",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Inyanga Shalwar +2",feet="Inyan. Crackows +2"}
 
 	-- Defense sets
 
-	sets.defense.PDT = {main="Bolelabunga",sub="Genbu's Shield",ammo="Homiliary",
+	sets.defense.PDT = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Nyame Helm",neck="Loricate Torque +1",ear1="Moonshade Earring",ear2="Eabani Earring",
 		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Inyanga Ring",ring2="Gelatinous Ring +1",
-		back=gear.fc_jse_cape,waist="Flax Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
-	sets.defense.MDT = {main="Malignance Pole",sub="Enki Strap",ammo="Homiliary",
+	sets.defense.MDT = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Moonshade Earring",ear2="Etiolation Earring",
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Gelatinous Ring +1",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
-	sets.defense.MEVA = {ammo="Homiliary",
+	sets.defense.MEVA = {main="Daybreak",sub="Genbu's Shield",ammo="Homiliary",
 		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Moonshade Earring",ear2="Eabani Earring",
 		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Inyanga Ring",ring2="Purity Ring",
-		back="Solemnity Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
+		back=gear.mnd_jse_back,waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 
 		-- Engaged sets
 

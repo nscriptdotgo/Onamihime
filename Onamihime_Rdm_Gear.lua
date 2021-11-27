@@ -169,7 +169,7 @@ function init_gear_sets()
 	}
 
     sets.midcast.Cure = {
-		main="Bolelabunga",		
+		main="Daybreak",		
 		sub="Sors Shield",
 		ammo="Pemphredo Tathlum",
 		head="Kaykaus Mitra +1",
@@ -231,7 +231,7 @@ function init_gear_sets()
 	sets.midcast.Shell = {ring2="Sheltered Ring"}
 	
 	sets.midcast['Enfeebling Magic'] = {
-		main="Naegling",
+		main="Daybreak",
 		sub="Ammurapi Shield",
 		range="Kaja Bow",
 		head="Viti. Chapeau +1",
@@ -249,7 +249,7 @@ function init_gear_sets()
 	}
 		
 	sets.midcast['Enfeebling Magic'].Resistant = {
-		main="Naegling",
+		main="Daybreak",
 		sub="Ammurapi Shield",
 		range="Kaja Bow",
 		head="Viti. Chapeau +1",
@@ -279,12 +279,7 @@ function init_gear_sets()
 	
 	sets.midcast.Dispel = sets.midcast['Enfeebling Magic'].Resistant
 	
-	sets.midcast.SkillBasedEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {
-		ear1="Vor Earring",
-		hands="Leth. Gantherots +1",
-		ring1="Stikini Ring",
-		legs="Psycloth Lappas"
-	})
+	sets.midcast.SkillBasedEnfeebling = set_combine(sets.midcast['Enfeebling Magic'], {ear1="Vor Earring",hands="Leth. Gantherots +1",ring1="Stikini Ring",legs="Psycloth Lappas"})
 	
 	sets.midcast['Frazzle II'] = sets.midcast['Enfeebling Magic'].Resistant
 	sets.midcast['Frazzle III'] = sets.midcast.SkillBasedEnfeebling
@@ -381,7 +376,7 @@ function init_gear_sets()
 
 	-- Idle sets
 	sets.idle = {
-		main="Bolelabunga",
+		main="Daybreak",
 		sub="Genbu's Shield",
 		ammo="Homiliary",
 		head="Viti. Chapeau +1",
@@ -398,40 +393,40 @@ function init_gear_sets()
 		feet="Nyame Sollerets"
 	}
 		
-	sets.idle.PDT = {main="Terra's Staff",sub="Oneiros Grip",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+	sets.idle.PDT = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 		
-	sets.idle.MDT = {main="Daybreak",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Shadow Ring",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Nyame Sollerets"}
+	sets.idle.MDT = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Sanare Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Shadow Ring",
+		back="Moonlight Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 		
-	sets.idle.Weak = {main="Bolelabunga",sub="Sacro Bulwark",range=empty,ammo="Homiliary",
+	sets.idle.Weak = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
 		head="Viti. Chapeau +3",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Sanare Earring",
-		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Dark Ring",
+		body="Jhakri Robe +2",hands=gear.merlinic_refresh_hands,ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back=gear.enfeeble_jse_back,waist="Flume Belt +1",legs="Lengo Pants",feet=gear.chironic_refresh_feet}
 	
 	sets.idle.DTHippo = set_combine(sets.idle.PDT, {back=gear.enfeeble_jse_back,legs="Carmine Cuisses +1",feet="Hippo. Socks +1"})
 	
 	-- Defense sets
-	sets.defense.PDT = {main="Terra's Staff",sub="Umbra Strap",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Flume Belt +1",legs="Malignance Tights",feet="Nyame Sollerets"}
+	sets.defense.PDT = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
+		head="Nyame Helm",neck="Loricate Torque +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Nyame Mail",hands="Nyame Gauntlets",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back="Moonlight Cape",waist="Flume Belt +1",legs="Nyame Flanchard",feet="Nyame Sollerets"}
 
 	sets.defense.NukeLock = sets.midcast['Elemental Magic']
 		
-	sets.defense.MDT = {main="Bolelabunga",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Nyame Sollerets"}
+	sets.defense.MDT = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back="Moonlight Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 		
-    sets.defense.MEVA = {main="Daybreak",sub="Sacro Bulwark",range=empty,ammo="Staunch Tathlum +1",
-		head="Malignance Chapeau",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Dark Ring",
-		back="Moonlight Cape",waist="Carrier's Sash",legs="Malignance Tights",feet="Nyame Sollerets"}
+    sets.defense.MEVA = {main="Daybreak",sub="Genbu's Shield",range=empty,ammo="Homiliary",
+		head="Bunzi's Hat",neck="Warder's Charm +1",ear1="Etiolation Earring",ear2="Eabani Earring",
+		body="Bunzi's Robe",hands="Bunzi's Gloves",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		back="Moonlight Cape",waist="Carrier's Sash",legs="Bunzi's Pants",feet="Bunzi's Sabots"}
 		
 	sets.Kiting = {legs="Carmine Cuisses +1"}
 	sets.latent_refresh = {waist="Fucho-no-obi"}
@@ -441,12 +436,9 @@ function init_gear_sets()
 	sets.NightIdle = {}
 	
 	-- Weapons sets
-	sets.weapons.Sequence = {main="Sequence",sub="Ammurapi Shield"}
-	sets.weapons.Naegling = {
-		main="Eletta Sword",
-		-- sub="Ammurapi Shield"
-	}
-	sets.weapons.Almace = {main="Almace",sub="Ammurapi Shield"}
+	sets.weapons.Sequence = {main="Sequence",sub="Genbu's Shield"}
+	sets.weapons.Naegling = {main="Naegling",sub="Genbu's Shield"}
+	sets.weapons.Almace = {main="Almace",sub="Genbu's Shield"}
 	sets.weapons.DualWeapons = {main="Naegling",sub="Tokko Knife"}
 	sets.weapons.DualWeaponsAcc = {main="Naegling",sub="Almace"}
 	sets.weapons.DualEvisceration = {main="Tauret",sub="Almace"}
@@ -520,17 +512,17 @@ function init_gear_sets()
 
 	sets.engaged.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Kentarch Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.Acc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Dark Ring",
+		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.DW = {
