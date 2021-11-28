@@ -8,12 +8,6 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','DualWeapons','MeleeWeapons')
-  
-	gear.obi_cure_waist = "Sacro Cord"
-	gear.obi_cure_back = "Alaunus's Cape"
-  
-	gear.obi_nuke_waist = "Sacro Cord"
-	gear.obi_high_nuke_waist = "Sacro Cord"
 
 	gear.mnd_jse_back = {name="Alaunus's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','MND+10','Enmity-10','Phys. dmg. taken-10%',}}
 	gear.fc_jse_cape = {name="Alaunus's Cape",augments={'MND+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10','Phys. dmg. taken-10%',}}
@@ -72,7 +66,7 @@ function init_gear_sets()
 		waist="Embla Sash", --5
 	}
 
-	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
+	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {})
 
 	sets.precast.FC.Stoneskin = set_combine(sets.precast.FC['Enhancing Magic'], {})
 
@@ -87,9 +81,7 @@ function init_gear_sets()
 
 	sets.precast.FC.StatusRemoval = sets.precast.FC['Healing Magic']
 
-	sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {
-		-- feet="Hygieia Clogs +1"
-	})
+	sets.precast.FC.Cure = set_combine(sets.precast.FC['Healing Magic'], {})
 
 	sets.precast.FC.Curaga = sets.precast.FC.Cure
 
@@ -97,10 +89,7 @@ function init_gear_sets()
 
 	sets.precast.FC.Impact =  set_combine(sets.precast.FC, {head=empty,body="Twilight Cloak"})
 
-	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {
-		-- main="Daybreak",
-		-- sub="Genmei Shield"
-	})
+	sets.precast.FC.Dispelga = set_combine(sets.precast.FC, {main="Daybreak",sub="Ammurapi Shield"})
 
 	-- Precast sets to enhance JAs
 	sets.precast.JA.Benediction = {body="Piety Bliaut +3"}
@@ -334,7 +323,7 @@ function init_gear_sets()
 		-- ear2="Etiolation Earring",
 		ring1={name="Ephedra Ring", bag="wardrobe1"},
 		ring2={name="Ephedra Ring", bag="wardrobe2"},
-		back=gear.fc_jse_cape,
+		back="Mending Cape",
 		waist="Embla Sash",
 	}
 

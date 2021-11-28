@@ -10,15 +10,6 @@ function user_job_setup()
 	state.MagicalDefenseMode:options('MDT')
 	state.ResistDefenseMode:options('MEVA')
 	state.Weapons:options('None','Naegling','Sequence','DualWeapons','DualWeaponsAcc','DualEvisceration','DualClubs','DualAeolian','DualProcDaggers','EnspellOnly')
-	
-	gear.obi_cure_back = "Tempered Cape +1"
-	gear.obi_cure_waist = "Witful Belt"
-
-	gear.obi_low_nuke_back = "Toro Cape"
-	gear.obi_low_nuke_waist = "Sekhmet Corset"
-
-	gear.obi_high_nuke_back = "Toro Cape"
-	gear.obi_high_nuke_waist = "Refoccilation Stone"
 
 	gear.da_jse_back = {name="Sucellos's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}}
 	gear.nuke_jse_back = {name="Sucellos's Cape",augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','INT+10','"Mag.Atk.Bns."+10','Phys. dmg. taken-10%',}}
@@ -123,17 +114,17 @@ function init_gear_sets()
 	sets.precast.WS['Sanguine Blade'] = {range=empty,ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body=gear.merlinic_nuke_body,hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Archon Ring",
-		back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
 	sets.precast.WS['Seraph Blade'] = {range=empty,ammo="Pemphredo Tathlum",
 		head=gear.merlinic_nuke_head,neck="Baetyl Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body=gear.merlinic_nuke_body,hands="Jhakri Cuffs +2",ring1="Shiva Ring +1",ring2="Freke Ring",
-		back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 		
 	sets.precast.WS['Aeolian Edge'] = {range=empty,ammo="Pemphredo Tathlum",
 		head=gear.merlinic_nuke_head,neck="Baetyl Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body=gear.merlinic_nuke_body,hands="Jhakri Cuffs +2",ring1="Metamor. Ring +1",ring2="Freke Ring",
-		back=gear.nuke_jse_back,waist="Refoccilation Stone",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
+		back=gear.nuke_jse_back,waist="Sacro Cord",legs="Merlinic Shalwar",feet=gear.merlinic_nuke_feet}
 
 	-- Midcast Sets
 
