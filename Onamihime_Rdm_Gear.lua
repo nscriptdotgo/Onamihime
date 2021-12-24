@@ -185,7 +185,7 @@ function init_gear_sets()
 		--Cureset for if it's not light weather but is light day.
     sets.midcast.LightDayCure = {main="Daybreak",sub="Sors Shield",range=empty,ammo="Pemphredo Tathlum",
         head="Kaykaus Mitra +1",neck="Incanter's Torque",ear1="Mendi. Earring",ear2="Meili Earring",
-        body="Kaykaus Bliaut",hands="Kaykaus Cuffs +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
+        body="Viti. Tabard +1",hands="Kaykaus Cuffs +1",ring1="Janniston Ring",ring2="Menelaus's Ring",
         back=gear.enfeeble_jse_back,waist="Sacro Cord",legs="Carmine Cuisses +1",feet="Kaykaus Boots +1"}
 		
 	sets.midcast.Cursna =  set_combine(sets.midcast.Cure, {neck="Debilis Medallion",hands="Hieros Mittens",
