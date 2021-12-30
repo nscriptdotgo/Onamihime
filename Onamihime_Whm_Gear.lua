@@ -412,7 +412,7 @@ function init_gear_sets()
 	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head=empty,neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
-		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
+		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Gwati Earring",ear2="Friomisi Earring",
@@ -437,7 +437,7 @@ function init_gear_sets()
 	sets.midcast['Dark Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Theophany Cap +2",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
 		body="Theo. Bliaut +3",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
-		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
+		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
@@ -460,12 +460,12 @@ function init_gear_sets()
 	sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring",
-		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
+		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Dispel = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
 		head="Nahtirah Hat",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring",
-		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
+		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Dispelga = set_combine(sets.midcast.Dispel, {main="Daybreak",sub="Ammurapi Shield"})
 
@@ -500,7 +500,7 @@ function init_gear_sets()
 		ring1="Metamor. Ring +1",
 		ring2="Stikini Ring",
 		back=gear.mnd_jse_back,
-		waist="Sacro Cord",
+		waist="Acuity Belt +1",
 		legs="Chironic Hose",
 		feet="Theo. Duckbills +3"
 	}

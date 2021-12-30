@@ -224,7 +224,7 @@ function init_gear_sets()
 	sets.midcast['Enfeebling Magic'] = {
 		main="Daybreak",
 		sub="Ammurapi Shield",
-		range="Kaja Bow",
+		range="Regal Gem",
 		head="Viti. Chapeau +1",
 		neck="Dls. Torque +1",
 		ear1="Snotra Earring",
@@ -252,7 +252,7 @@ function init_gear_sets()
 		ring1="Metamorph Ring",
 		ring2="Stikini Ring",
 		back=gear.enfeeble_jse_back,
-		waist="Sacro Cord",
+		waist="Acuity Belt +1",
 		legs="Chironic Hose",
 		feet="Bunzi's Sabots"
 	}
@@ -317,12 +317,12 @@ function init_gear_sets()
 	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",range="Kaja Bow",ammo=empty,
 		head=empty,neck="Dls. Torque +1",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Leth. Gantherots +1",ring1="Metamorph Ring",ring2="Stikini Ring",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Chironic Hose",feet="Jhakri Pigaches +2"}
+		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Jhakri Pigaches +2"}
 
 	sets.midcast['Dark Magic'] = {main="Rubicundity",sub="Ammurapi Shield",range="Kaja Bow",ammo=empty,
 		head="Amalric Coif +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Atrophy Tabard +1",hands="Leth. Gantherots +1",ring1="Metamor. Ring +1",ring2="Stikini Ring +1",
-		back=gear.nuke_jse_back,waist="Luminary Sash",legs="Psycloth Lappas",feet=gear.merlinic_nuke_feet}
+		back=gear.nuke_jse_back,waist="Acuity Belt +1",legs="Psycloth Lappas",feet=gear.merlinic_nuke_feet}
 
     sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",range="Kaja Bow",ammo=empty,
         head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
@@ -376,7 +376,7 @@ function init_gear_sets()
 		ear2="Eabani Earring",
 		body="Jhakri Robe +2",
 		hands="Nyame Gauntlets",
-		ring1="Ayanmo Ring",
+		ring1="Defending Ring",
 		ring2="Gelatinous Ring +1",
 		back=gear.enfeeble_jse_back,
 		waist="Carrier's Sash",
@@ -459,7 +459,6 @@ function init_gear_sets()
 --		back=gear.da_jse_back,waist="Kentarch Belt +1",legs="Carmine Cuisses +1",feet="Carmine Greaves +1"}
 
 	sets.engaged = {
-		-- main="Eletta Sword",
 		ammo="Coiste Bodhar",
 		head="Malignance Chapeau",
 		-- neck="Asperity Necklace",
@@ -471,8 +470,8 @@ function init_gear_sets()
 		ring2="Apate Ring",
 		back=gear.da_jse_back,
 		waist="Kentarch Belt +1",
-		legs="Ayanmo Cosciales +1",
-		feet="Ayanmo Gambieras +1"
+		legs="Malignance Tights",
+		feet="Malignance Boots"
 	}
 		
 	sets.engaged.EnspellOnly = {
@@ -488,7 +487,7 @@ function init_gear_sets()
 		back="Ghostfyre Cape",
 		waist="Kentarch Belt +1",
 		legs="Carmine Cuisses +1",
-		feet="Nyame Sollerets"
+		feet="Malignance Boots"
 	}
 
 	sets.engaged.Acc = {
@@ -503,17 +502,17 @@ function init_gear_sets()
 
 	sets.engaged.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Kentarch Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.Acc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.FullAcc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Cessance Earring",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
+		body="Malignance Tabard",hands="Hagondes Cuffs +1",ring1="Defending Ring",ring2="Gelatinous Ring +1",
 		back="Moonlight Cape",waist="Flume Belt +1",legs="Hagondes Pants +1",feet="Battlecast Gaiters"}
 		
 	sets.engaged.DW = {
@@ -522,40 +521,40 @@ function init_gear_sets()
 		neck="Anu Torque",
 		ear1="Suppanomimi",
 		ear2="Sherida Earring",
-		body="Nyame Mail",
+		body="Malignance Tabard",
 		hands="Aya. Manopolas +2",
 		ring1="Ayanmo Ring",
 		ring2="Apate Ring",
 		back=gear.da_jse_back,
 		waist="Kentarch Belt +1",
 		legs="Carmine Cuisses +1",
-		feet="Nyame Sollerets"
+		feet="Malignance Boots"
 	}
 		
 	sets.engaged.DW.Acc = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.DW.FullAcc = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Combatant's Torque",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
-		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Nyame Sollerets"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Ramuh Ring +1",ring2="Ramuh Ring +1",
+		back=gear.da_jse_back,waist="Olseni Belt",legs="Carmine Cuisses +1",feet="Malignance Boots"}
 		
 	sets.engaged.DW.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
-		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
+		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.engaged.DW.Acc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Sherida Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
-		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ilabrat Ring",
+		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 		
 	sets.engaged.DW.FullAcc.DT = {ammo="Coiste Bodhar",
 		head="Malignance Chapeau",neck="Loricate Torque +1",ear1="Suppanomimi",ear2="Telos Earring",
-		body="Nyame Mail",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
-		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Nyame Sollerets"}
+		body="Malignance Tabard",hands="Malignance Gloves",ring1="Defending Ring",ring2="Ramuh Ring +1",
+		back="Moonlight Cape",waist="Reiki Yotai",legs="Malignance Tights",feet="Malignance Boots"}
 end
 
 -- Select default macro book on initial load or subjob change.
