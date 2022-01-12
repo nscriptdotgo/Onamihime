@@ -410,42 +410,42 @@ function init_gear_sets()
 	}
 
 	sets.midcast.Impact = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head=empty,neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head=empty,neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Twilight Cloak",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast['Elemental Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Gwati Earring",ear2="Friomisi Earring",
+		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Friomisi Earring",
 		body="Witching Robe",hands="Theophany Mitts +3",ring1="Shiva Ring +1",ring2="Freke Ring",
 		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast['Elemental Magic'].Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Gwati Earring",ear2="Crematio Earring",
+		head="C. Palug Crown",neck="Sanctity Necklace",ear1="Regal Earring",ear2="Crematio Earring",
 		body="Witching Robe",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Freke Ring",
 		back=gear.mnd_jse_back,waist="Yamabuki-no-Obi",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast['Divine Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="C. Palug Crown",neck="Incanter's Torque",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="C. Palug Crown",neck="Incanter's Torque",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Holy = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Gwati Earring",ear2="Friomisi Earring",
+		head="C. Palug Crown",neck="Baetyl Pendant",ear1="Regal Earring",ear2="Friomisi Earring",
 		body="Witching Robe",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Freke Ring",
 		back=gear.mnd_jse_back,waist="Sacro Cord",legs="Gyve Trousers",feet="Theo. Duckbills +3"}
 
 	sets.midcast['Dark Magic'] = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Theophany Cap +2",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="Theophany Cap +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Theo. Bliaut +3",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Drain = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="Pixie Hairpin +1",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Theo. Bliaut +3",hands="Theophany Mitts +3",ring1="Evanescence Ring",ring2="Archon Ring",
 		back=gear.mnd_jse_back,waist="Fucho-no-obi",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Drain.Resistant = {main="Rubicundity",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Theophany Cap +2",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="Theophany Cap +2",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Chironic Doublet",hands="Theophany Mitts +3",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Fucho-no-obi",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
@@ -458,12 +458,12 @@ function init_gear_sets()
 		back=gear.mnd_jse_back,waist="Embla Sash",legs="Lengo Pants",feet="Regal Pumps +1"}
 
 	sets.midcast.Stun.Resistant = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Nahtirah Hat",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="Nahtirah Hat",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
 	sets.midcast.Dispel = {main="Daybreak",sub="Ammurapi Shield",ammo="Pemphredo Tathlum",
-		head="Nahtirah Hat",neck="Erra Pendant",ear1="Gwati Earring",ear2="Malignance Earring",
+		head="Nahtirah Hat",neck="Erra Pendant",ear1="Regal Earring",ear2="Malignance Earring",
 		body="Inyanga Jubbah +2",hands="Fanatic Gloves",ring1="Metamor. Ring +1",ring2="Stikini Ring",
 		back=gear.mnd_jse_back,waist="Acuity Belt +1",legs="Chironic Hose",feet="Theo. Duckbills +3"}
 
@@ -475,7 +475,7 @@ function init_gear_sets()
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +2",
 		neck="Erra Pendant",
-		ear1="Vor Earring",
+		ear1="Regal Earring",
 		ear2="Malignance Earring",
 		body="Theo. Bliaut +3",
 		hands="Theophany Mitts +3",
@@ -493,7 +493,7 @@ function init_gear_sets()
 		ammo="Pemphredo Tathlum",
 		head="Theophany Cap +2",
 		neck="Erra Pendant",
-		ear1="Vor Earring",
+		ear1="Regal Earring",
 		ear2="Malignance Earring",
 		body="Theo. Bliaut +3",
 		hands="Theophany Mitts +3",
