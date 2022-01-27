@@ -275,13 +275,13 @@ function init_gear_sets()
 	sets.midcast.MeleeLightDayCuraga = set_combine(sets.midcast.MeleeCure, {waist="Hachirin-no-Obi"})
 
 	sets.midcast.CureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
-	sets.midcast.LightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.Curaga.DT = set_combine(sets.midcast.Cure.DT, {})
-	sets.midcast.LightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
-	sets.midcast.LightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi"})
+	sets.midcast.LightWeatherCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi",})
+	sets.midcast.LightWeatherCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
+	sets.midcast.LightDayCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1",waist="Hachirin-no-Obi",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
+	sets.midcast.LightDayCure.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
+	sets.midcast.Curaga.DT = set_combine(sets.midcast.Cure.DT, {hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
+	sets.midcast.LightWeatherCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
+	sets.midcast.LightDayCuraga.DT = set_combine(sets.midcast.Cure.DT, {waist="Hachirin-no-Obi",hands="Bunzi's Gloves",feet="Kaykaus Boots +1"})
 	sets.midcast.MeleeCure.DT = set_combine(sets.midcast.Cure.DT, {})
 
 	sets.midcast.MeleeCureSolace.DT = set_combine(sets.midcast.Cure.DT, {body="Ebers Bliaut +1"})
@@ -758,6 +758,20 @@ buff_spell_lists = {
 		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=false},
 		{Name='Barwatera',		Buff='Barwater',	SpellID=71,		Reapply=false},
 		{Name='Barpoisonra',	Buff='Barpoison',	SpellID=87,		Reapply=false},
+		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
+	},
+	Ambu = {
+		{Name='Reraise IV',		Buff='Reraise',		SpellID=848,	Reapply=false},
+		{Name='Haste',			Buff='Haste',		SpellID=57,		Reapply=false},
+		{Name='Aquaveil',		Buff='Aquaveil',	SpellID=55,		Reapply=false},
+		{Name='Stoneskin',		Buff='Stoneskin',	SpellID=54,		Reapply=false},
+		{Name='Blink',			Buff='Blink',		SpellID=53,		Reapply=false},
+		{Name='Phalanx',		Buff='Phalanx',		SpellID=106,	Reapply=false},
+		{Name='Boost-STR',		Buff='STR Boost',	SpellID=479,	Reapply=false},
+		{Name='Shellra V',		Buff='Shell',		SpellID=134,	Reapply=true},
+		{Name='Protectra V',	Buff='Protect',		SpellID=129,	Reapply=true},
+		{Name='Barblizzara',	Buff='Barblizzard',	SpellID=67,		Reapply=true},
+		{Name='Barparalyzra',	Buff='Barparalyze',	SpellID=88,		Reapply=true},
 		{Name='Auspice',		Buff='Auspice',		SpellID=96,		Reapply=false},
 	},
 }
